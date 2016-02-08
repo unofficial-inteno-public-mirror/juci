@@ -1,5 +1,28 @@
 #! /bin/sh
-[ $# -lt 1 ] && echo 'URL needed'  && return;
+
+send_event() {
+ 	case $1 in
+		0)
+			ubus send "$2" "{\"code\":$1, \"status\":\"Success\"}"
+			;;
+		4)
+			ubus send "$2" "{\"code\": $1, \"status\":\"Network error\"}"
+			;;
+		6)
+			ubus send "$2" "{\"code\": $1, \"status\":\"Authentication error\"}"
+			;;
+		*)
+			ubus send "$2" "{\"code\": $1, \"status\":\"Unknown error\"}"
+			;;
+	esac
+	return $1
+}
+print_help() {
+	printf "Usage: netupgrade.sh test|run [options] URL\n\n"
+	printf "Options:\n\t-u|--user uname:\tset username for protected urls\n\t-p|--password passwd:\tset password for protected urls\n\t-s|--save:\t\tset this flag to save settings on upgrade\n\n"
+}
+
+[ $# -lt 2 ] && print_help && return;
 
 IMGPATH="/tmp/firmware.bin"
 rm -f $IMGPAT
