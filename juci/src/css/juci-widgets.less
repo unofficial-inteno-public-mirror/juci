@@ -1,0 +1,64 @@
+//include colors
+@import "colors";
+
+.field-error {
+	border-left: 4px solid fade(@theme-error-color, 60%); 
+}
+
+.juci-config-apply-pane {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: white;
+	padding: 10px;
+	z-index: 1000; 
+	box-shadow: 1px 1px 5px 1px @theme-shadow-color; 
+}
+
+.juci-config-info {
+	margin-bottom: 20px; 
+}
+
+.juci-config-line-error {
+	background-color: @theme-error-color; 
+}
+
+.juci-config-line-data {
+	@control-width: 250px; 
+	div:not(.input-group) {
+		& > .form-control[type="text"] {
+			min-width: @control-width !important;
+		}
+		& > .form-control[type="number"] {
+			min-width: @control-width;
+		}
+		& > .form-control[type="password"] {
+			min-width: @control-width;
+		}
+		.juci-select {
+			@arrow-width: 26px; 
+			.button-label, input {
+				min-width: @control-width - @arrow-width; 
+			}
+			.button-arrow {
+				padding-left: 6px; 
+				padding-right: 6px; 
+				min-width: @arrow-width; 
+			}
+		}
+		input[type="range"] {
+			min-width: @control-width; 
+		}
+		.input-group {
+			min-width: @control-width; 
+		}
+	}
+}
+
+.no-padding {
+    padding: 0;
+}
+
+a.list-group-item{
+	color: @theme-text-color;
+}

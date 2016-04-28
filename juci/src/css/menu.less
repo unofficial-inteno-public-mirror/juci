@@ -1,0 +1,105 @@
+@import "colors";
+
+.juci-sidebar {
+	ul.left-menu {
+		list-style-type: none;
+		padding: 10px;
+		margin: 0 20px 0 -10px;
+		li {
+			padding: 0;
+			margin: 0;
+			background: none repeat scroll 0 0 transparent;
+			border: 0 none;
+			font-family: Arial,sans-serif;
+			font-size: 16px;
+			outline: 0 none;
+			vertical-align: middle;
+			a.open {
+				color: @theme-heading-color;
+				font-weight: bold;
+			}
+		}
+		a {
+			margin: 0;
+			display: block;
+			border-bottom: 1px solid @theme-border-color;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 20px;
+			text-decoration: none;
+			font-size: 100%;
+			white-space: nowrap; 
+			collapsed {
+				border-bottom:none;
+			}
+			&:hover &:visited &:active{
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+	}
+}
+.juci-nav {
+	a {
+		color: @theme-text-color;
+	}
+}
+ul.left-sub-menu {
+	list-style-type: none;
+	padding: 0;
+	margin: -10px 0 10px 20px;
+	li {
+		padding: 0;
+		margin: 0;
+		background: none repeat scroll 0 0 transparent;
+		border: 0 none;
+		font-family: Arial,sans-serif;
+		font-size: 16px;
+		outline: 0 none;
+		vertical-align: middle;
+	}
+}
+
+.top-navbar {
+	color: @theme-text-color !important;
+	background-color: white;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+	border-bottom: 1px solid @theme-border-color;
+	box-shadow: 0px 1px 3px @theme-border-color;
+	.navbar-nav {
+		& > li {
+			font-family: "helvetica";
+			font-size: 0.9em;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			& > a {
+				background-color: transparent;
+				padding-bottom: 8px !important;
+				padding-top: 8px !important;
+				color: @theme-text-color !important;
+			}
+		}
+		& > .open {
+			& > a:focus {
+				background-color: transparent;
+			}
+			
+			& > a, & > a:hover {
+				background-color: white;
+				color: @theme-detail-color !important;
+				border-top: 2px solid @theme-detail-color;
+				@media screen and (max-width: 968px) {
+					background-color: @theme-footer-base-color; 
+				}
+			}
+		}
+			margin-top: 40px; 
+			margin-left: 30px; 
+	}
+	.navbar-toggle {
+		background-color: @theme-footer-base-color; 
+	}
+}
+

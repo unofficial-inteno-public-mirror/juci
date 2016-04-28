@@ -5,6 +5,7 @@ define Plugin/juci
 
 	STYLES-y:=
 	STYLES-y+=src/css/normalize.css
+	STYLES-y+=src/css/nga.min.css
 	STYLES-y+=src/lib/css/bootstrap.min.css
 	STYLES-y+=src/lib/css/bootstrap-select.min.css
 	STYLES-y+=src/lib/css/font-awesome.min.css
@@ -18,10 +19,6 @@ define Plugin/juci
 	STYLES-y+=src/lib/css/abn_tree.css
 	STYLES-y+=src/lib/css/ng-tags-input.bootstrap.css
 	STYLES-y+=src/lib/css/dropdown-multi-select.css
-	STYLES-y+=src/css/menu.css
-	STYLES-y+=src/css/juci-icons.css
-	STYLES-y+=src/css/nga.min.css
-	STYLES-y+=src/css/app.css
 	
 	JAVASCRIPT-y:=
 	JAVASCRIPT-y+=src/lib/js/async.js
