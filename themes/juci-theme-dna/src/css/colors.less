@@ -1,0 +1,31 @@
+// Define all your colors here to make the pages uniform!!
+//text colors
+@theme-text-color: #333;
+@theme-heading-color: #000; 
+//error/success color
+@theme-error-color: #ff007d;
+@theme-success-color: #F19D00; 
+//link-color
+@theme-link-color: #ffa100; 
+// complement-color
+@theme-detail-color: #ff007d; 
+//grayscale colors
+@theme-footer-base-color: #ddd; 
+@theme-border-color: #eee; 
+@theme-shadow-color: #888;
+
+// this function can be used to create gradiant with .gradient(startcolor, endcolor)
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
