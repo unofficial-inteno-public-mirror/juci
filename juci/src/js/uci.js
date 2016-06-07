@@ -72,31 +72,45 @@
 		}
 	}
 
+	function PortOrRangeValidator(separator){
+		if(!separator){ var separator = ":"; }
+		this.validate = function(field){
+			var re = new RegExp(separator,"g");
+			var separatorsFound = (field.value.match(re) || []).length;
+			if(separatorsFound === 0){
+				return new PortValidator().validate(field);
+			}
+			else{
+				return new PortRangeValidator(separator).validate(field);
+			}
+		};
+	}
+
 	function PortValidator(){
 		this.validate = function(field){
 			if(!field || !field.value) return null;
 			if(field.value.match(/^[0-9]+$/)){
 				var num = parseInt(field.value);
-				if(num < 1 || num > 65535) return gettext("A port is between 1 and 65535");
+				if(num < 1 || num > 65535) return gettext("Port has to be a number between 1 and 65535");
 			} else {
-				return gettext("A port can only be a number between 1 and 65535 or a range on the form number-number");
+				return gettext("Port has to be a number between 1 and 65535");
 			}
 			return null;
 		};	
 	}
-	function PortRangeValidator(){
+	function PortRangeValidator(separator){
+		if(!separator){ var separator = ":"; }
 		this.validate = function(field){
 			if(!field || !field.value) return null;
-			if(field.value.match(/^[0-9]+:[0-9]+$/)){ //type is port range
-				var start = parseInt(field.value.split(":")[0]);
-				var stop = parseInt(field.value.split(":")[1]);
-				if(start < 1 || start > 65535 || stop < 1 || stop > 65535 || start > stop || start == stop) return gettext("A port is between 1 and 65535 and start port must be lower than stop port");
-			}else if(field.value.match(/^[0-9]+$/)){
-				var num = parseInt(field.value);
-				if(num < 1 || num > 65535) return gettext("A port is between 1 and 65535");
+
+			var re = new RegExp("^[0-9]+"+separator+"[0-9]+$");
+			if(field.value.match(re)){ //type is port range
+				var start = parseInt(field.value.split(separator)[0]);
+				var stop = parseInt(field.value.split(separator)[1]);
+				if(start < 1 || start > 65535 || stop < 1 || stop > 65535 || start > stop || start == stop) return gettext("Ports has to be between 1 and 65535 and start port must be lower than end port");
 			}
-			else {
-				return gettext("A port can only be a number between 1 and 65535 or a range on the form number:number");
+			else{
+				return gettext("Port range has to be on the form number"+separator+"number");
 			}
 			return null;
 		};	
@@ -121,6 +135,7 @@
 	
 	function WEPKeyValidator(){
 		this.validate = function(field){
+			if(field.value === "") return null;
 			if(field.value.length>=10 && field.value.length<=26){
 				var matches = field.value.match(/[a-f0-9A-F]+/);
 				if(matches!==null && field.value.length==matches[0].length){ return null; }
@@ -131,13 +146,12 @@
 
 	function WPAKeyValidator(){
 		this.validate = function(field){
+			if(field.value === "") return null;
 			function isNotPrintableASCII(chr){
 				if(chr.charCodeAt()<32 && chr.charCodeAt()>126){ return true; }
 				else{ return false; }
 			}
-
-			if(field.value.length<8 || field.value.length>63){ return gettext("WPA encryption key must be 8-63 printable ASCII characters!"); }
-
+			if(field.value.length < 8 || field.value.length > 63){ return gettext("WPA encryption key must be 8-63 printable ASCII characters!"); }
 			for(var i=0; i<field.value.length; i++){
 				if(isNotPrintableASCII(field.value.charAt(i))){
 					return gettext("WPA encryption key must be 8-63 printable ASCII characters!");
@@ -1159,6 +1173,7 @@
 		WeekDayListValidator: WeekDayListValidator, 
 		TimespanValidator: TimespanValidator, 
 		PortValidator: PortValidator, 
+		PortOrRangeValidator: PortOrRangeValidator,
 		PortRangeValidator: PortRangeValidator,
 		PortRangeDashValidator: PortRangeDashValidator,
 		NumberLimitValidator: NumberLimitValidator, 

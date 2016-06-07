@@ -263,35 +263,39 @@ JUCI.app.run(function($ethernet, $wireless, $uci){
 		"maclist":			{ dvalue: [], type: Array } // match_each: /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/ }
 	}, function validator(section){
 		if(section.disabled.value !== false){ return null; }
-
-		// validate ssid
+		var eList = [];
+// validate ssid
 		if(section.ssid.value.length >= 32) 
-			return gettext("SSID string can be at most 32 characters long!"); 
-		// validate keys
+			eList.push(gettext("Invalid SSID: ") + section.ssid.value + gettext(". SSID can not be more than 32 characters long!"));
+// validate keys
 		switch(section.encryption.value){
-			case "wep-open": {
-				var key_index = section['key_index'].value;
-				var key = section['key'+key_index];
-
-				if(key && key.value == ""){ return gettext("Please enter WEP encryption key #"+key_index); }
-
-			// These verifications are done by UCI.validators.WEPKeyValidator
-			//	for(var id = 1; id <= 4; id++){
-			//		var key = section["key"+id]; 
-			//		if(key && key.value != "" && !key.value.match(/[a-f0-9A-F]{10,26}/)){ // this regexp doesnt work as expected
-			//			if(!isValid(key.value)){ return gettext("WEP encryption key #"+id+" must be 10-26 hexadecimal characters!"); }
-			//		}
-			//	}
+			case "wep-open":
+			case "wep": {
+				var WEPValidator = new UCI.validators.WEPKeyValidator();
+				var err = null;
+				for(var i = 1; i <= 4; i++){
+					err = WEPValidator.validate(section["key"+i]);
+					if(err !== null) eList.push(gettext("Wireless interface ") + section.ssid.value + gettext(" has invalid key #") + i + gettext(" error: ") + err);
+				}
+				if(section["key"+section.key_index.value].value === ""){
+					eList.push(gettext("Wireless interface ") + section.ssid.value + gettext(" must have key #") + section.key_index.value + gettext(" set!"));
+				}
 			} break;
-			case "psk": 
-			case "psk2": 
+			//case "psk":
+			case "psk2":
 			case "mixed-psk": {
-			//	if(!section.key.value || !(section.key.value.length >= 8 && section.key.value.length < 64))
-			//		return gettext("WPA key must be 8-63 characters long!"); 
-			} break; 
-			default: 
-				break; 
+				var WPAValidator = new UCI.validators.WPAKeyValidator();
+				if((!section.key.value) && section.mode.value === "ap"){
+					var error = WPAValidator.validate(section.key);
+					if(error !== null) eList.push(gettext("Wireless interface ") + section.ssid.value + gettext(". WPA key must be 8-63 printable ASCII characters long!"));
+				}
+			} break;
+			case "wpa-mixed":
+			case "wpa2":
+			default:
+				break;
 		}
-		return null; 
-	}); 	
-})(); 
+		if(eList && eList.length > 0) return eList;
+		return null;
+	});
+})();
