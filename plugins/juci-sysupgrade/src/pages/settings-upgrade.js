@@ -124,7 +124,7 @@ JUCI.app
 			if(response.stderr) $scope.$emit("error", $tr(gettext("Online upgrade check failed"))+": "+response.stderr);
 			$scope.onlineCheckInProgress = 0;
 			$scope.$apply();
-		});
+		}).fail(function(e){console.log(e);});
 	}
 	$scope.onUpgradeOnline = function(){
 		confirmKeep().done(function(keep){
@@ -134,8 +134,8 @@ JUCI.app
 			$scope.$KEEP = keep;
 			$scope.$PATH = $scope.uploadFilename;
 			console.log("testing image: "+ $scope.uploadFilename);
-			$rpc.$call("juci.system.upgrade", "run", {"method":"test","args":JSON.stringify({"path":$scope.onlineUpgrade})}).fail(function(){
-				$scope.showUpgradeStatus = 0;
+			$rpc.$call("juci.system.upgrade", "run", {"method":"test","args":JSON.stringify({"path":$scope.onlineUpgrade})}).fail(function(e){
+				$scope.errror = e;
 				$scope.$apply();
 			});
 		});
