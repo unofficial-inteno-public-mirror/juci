@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "Allow"
+msgstr "Salli"
+
+msgid "Deny"
+msgstr "Estä"
+
+msgid "UPNP Settings"
+msgstr "UPNP asetukset"
+
+msgid "internet.services.upnp.info"
+msgstr "UPnP"
+
+msgid "General Settings"
+msgstr "Yleiset asetukset"
+
+msgid "Automatically Start Service At Bootup"
+msgstr "Käynnistä palvelu automaattisesti, kun reititin käynnistetään"
+
+msgid "Enable upnp daemon at boot time"
+msgstr "Ota käyttöön UPNP käynnistyksen yhteydessä"
+
+msgid "Start / Stop Service"
+msgstr "Käynnistä / Sammuta palvelu"
+
+msgid "Start/stop upnp daemon (make sure you have WAN connection!)"
+msgstr "Käynnistä/sammuta UPNP daemon (varmista, että WAN yhteys on käytössä!)"
+
+msgid "Enable UPNP"
+msgstr "Ota UPNP käyttöön"
+
+msgid "Enable UPNP protocol"
+msgstr "Ota käyttöön UPNP protokolla"
+
+msgid "Enable NAT-PMP"
+msgstr "Ota käyttöön NAT-PMP"
+
+msgid "Enable NAT-PMP protocol"
+msgstr "Ota käyttöön NAT-PMP protokolla"
+
+msgid "Enable secure mode"
+msgstr "Ota käyttöön turvallinen tila"
+
+msgid "Allow adding forwards only to requesting ip addresses"
+msgstr "Salli edelleenlähetykset vain pyyntöjä lähettäviltä IP-osoitteilta"
+
+msgid "Enable additional logging"
+msgstr "Ota käyttöön lisälokitus"
+
+msgid "Puts extra debugging information into the system log"
+msgstr "Kirjoittaa lokiin lisätietoa"
+
+msgid "Downlink"
+msgstr "Latausnopeus"
+
+msgid "Value in KByte/s, informational only"
+msgstr "Arvo KByte/s. Vain informatiivinen"
+
+msgid "Uplink"
+msgstr "Lähetysnopeus"
+
+msgid "Port"
+msgstr "Portti"
+
+msgid "External Interface"
+msgstr "Ulkoinen liitäntä"
+
+msgid "Internal Interface"
+msgstr "Sisäinen liitäntä"
+
+msgid "Advanced Settings"
+msgstr "Edistyneet asetukset"
+
+msgid "Device UUID"
+msgstr "Laitteen UUID"
+
+msgid "Announced serial number"
+msgstr "Ilmoitettu sarjanumero"
+
+msgid "Serial Number"
+msgstr "Sarjanumero"
+
+msgid "Announced model number"
+msgstr "Ilmoitettu mallinumero"
+
+msgid "Model Number"
+msgstr "Mallinumero"
+
+msgid "Notify interval"
+msgstr "Ilmoitusintervalli"
+
+msgid "Clean rules threshold"
+msgstr "Sääntöjen tyhjentämisen raja-arvo"
+
+msgid "Clean rules interval"
+msgstr "Sääntöjen tyhjentämisen intervalli"
+
+msgid "Presentation URL"
+msgstr "Esitysosoite"
+
+msgid "UPnP lease file"
+msgstr "UPnP vuokratiedosto"
+
+msgid "UPnP ACLs"
+msgstr ""
+
+msgid "UPnP Open Ports"
+msgstr "Käyttää UPnP:tä avaamaan automaattisesti tarvittavat portit reititimestäsi"
+
+msgid "No UPnP ports currently in use"
+msgstr "Ei käytössä olevia UPnP-porttteja"
+
+msgid "Pkts. cnt."
+msgstr "Pakettilaskuri"
+
+msgid "Bytes"
+msgstr "Bytes"
+
+msgid "Target"
+msgstr "Kohde"
+
+msgid "Proto."
+msgstr "Protokolla"
+
+msgid "Opt"
+msgstr "Opt"
+
+msgid "Source"
+msgstr "Source"
+
+msgid "Dest."
+msgstr "Dest."
+
+msgid "Comment"
+msgstr "Kommentti"
+
+msgid "External ports"
+msgstr "Ulkoiset portit"
+
+msgid "Internal addresses"
+msgstr "Sisäiset osoitteet"
+
+msgid "Internal ports"
+msgstr "Sisäiset portit"
+
+msgid "Action"
+msgstr "Toiminto"
+
+msgid "Sort"
+msgstr "Järjestä"
+
+msgid "Delete"
+msgstr "Poista"
+
+msgid "Packets cnt."
+msgstr "Packets cnt."
+
+msgid "Proto"
+msgstr "Proto"
+
+msgid "menu-upnpd-status-title"
+msgstr "PuhelinUPNP"
+
+msgid "menu-upnpd-settings-title"
+msgstr "UPNP"

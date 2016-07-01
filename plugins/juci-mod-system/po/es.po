@@ -1,0 +1,316 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid ""
+"This will reset your configuration to factory defaults. Do you want to "
+"continue?"
+msgstr "Tämä palauttaa tehdasasetukset. Haluatko jatkaa?"
+
+msgid ""
+"Configuration has been restored. You need to reboot the device for settings "
+"to take effect! Do you want to reboot now?"
+msgstr ""
+"Konfiguraatio on palautettu. Laite on käynnistettävä uudelleen, jotta "
+"asetukset astuvat voimaan! Haluatko käynnistää uudelleen nyt?"
+
+msgid "Passwords do not match!"
+msgstr "Salasanat eivät täsmää!"
+
+msgid "Are you sure you want to save backup without password?"
+msgstr "Haluatko varmasti poistaa tämän vyöhykkeen?"
+
+msgid ""
+"Was unable to set password. Please make sure you have entered correct "
+"current password!"
+msgstr ""
+"Salasanan asettaminen epäonnistui. Tarkista, että nykyinen salasana on "
+"oikein!"
+
+msgid "Hostname"
+msgstr "Isäntäkoneen nimi"
+
+msgid "Model"
+msgstr "Malli"
+
+msgid "N/A"
+msgstr "Ei saatavilla"
+
+msgid "Firmware Version"
+msgstr "Ohjelmistoversio"
+
+msgid "Local Time"
+msgstr "Paikallinen aika"
+
+msgid "Uptime"
+msgstr "Päälläoloaika"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "Kernel Version"
+msgstr "Kernel versio"
+
+msgid "Filesystem"
+msgstr "Tiedostojärjestelmä"
+
+# /home/reidar/juci/plugins/juci-mod-system/src/pages/status-system.js
+msgid "Active Connections"
+msgstr "Aktiiviset yhteydet"
+
+msgid "Usage"
+msgstr "Käyttö"
+
+msgid "Shared"
+msgstr "Jaettu"
+
+msgid "Buffered"
+msgstr "Puskuroitu"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Backup Settings"
+msgstr "Tehdasasetukset"
+
+msgid "settings.config.info"
+msgstr ""
+"Tallenna asetukset, palauta asetukset varmuuskopiosta tai palauta laitteen "
+"tehdasasetukset.\n"
+"Voit tallentaa varmuuskopion tietokoneellesi. Suosittelemme pitämään aina "
+"varmuuskopion tietokoneella viimeisimmästä konfiguraatiosta."
+
+msgid "Save settings to computer with password protection"
+msgstr "Tallenna salasanalla suojattu asetusten varmuuskopio tietokoneelle"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Restore settings from a configuration saved on a computer"
+msgstr "Palauta asetukset tietokoneelle tallennetusta varmuuskopiosta"
+
+msgid "Load"
+msgstr "Lataa"
+
+msgid "Factory Settings"
+msgstr "Tehdasasetukset"
+
+msgid "Reset restores the factory default settings of your gateway"
+msgstr "Palauta oletusasetuksiin palauttaa modeemin tehdasasetuksille"
+
+msgid "Reset"
+msgstr "Palauta oletusasetuksiin"
+
+msgid "Save Configuration to Computer"
+msgstr "Konfiguraatiomenetelmä"
+
+msgid "Comments"
+msgstr "Kommentit"
+
+msgid "New Password"
+msgstr "Uusi salasana"
+
+msgid "Re-type password"
+msgstr "Anna salasana uudelleen"
+
+msgid "Select configuration backup to upload"
+msgstr "Valitse ladattava varmuuskopio"
+
+msgid "Backup file password"
+msgstr "Varmuuskopiotiedoston salasana"
+
+msgid "Password (if encrypted)"
+msgstr "Salasana (jos salattu)"
+
+msgid "Start upgrade"
+msgstr "Aloita päivitys"
+
+msgid "Upgrade"
+msgstr "﻿Päivitä"
+
+msgid "Please add a comment describing this configuration"
+msgstr "Lisää kommentti tästä konfiguraatiosta"
+
+msgid "Energy Settings"
+msgstr "Virranhallinta"
+
+msgid "settings.energy.info"
+msgstr "Vähennä virrankulusta poistamalla käyttämättömiä toimintoja käytöstä."
+
+msgid "USB Port"
+msgstr "USB-portti"
+
+msgid "Status-LED"
+msgstr "Status-LED"
+
+msgid "Power-LED"
+msgstr "Power-LED"
+
+msgid "Power-LED Brightness"
+msgstr "Power-LED:n kirkkaus"
+
+msgid "Missing uci config boardpanel."
+msgstr "Missing uci config boardpanel."
+
+msgid "Configure Buttons"
+msgstr "Konfiguraatio"
+
+msgid "settings.management.buttons.info"
+msgstr "Hallinta"
+
+msgid "Configure LEDs"
+msgstr ""
+
+msgid "settings.management.leds.info"
+msgstr "Enable/disable the LEDs on your router"
+
+msgid "Management"
+msgstr "Hallinta"
+
+msgid "system.management.info"
+msgstr " "
+
+msgid "Change Account Passwords"
+msgstr "Vaihda salasana"
+
+msgid "settings.password.info"
+msgstr ""
+"Aseta modeemin uusi salasana rajoittaaksesi modeemin hallintaan pääsyä."
+
+msgid "Change password for user"
+msgstr "Vaihda salasana"
+
+msgid "Change Password"
+msgstr "Vaihda salasana"
+
+msgid "Services"
+msgstr "Fyysinen liitäntä"
+
+msgid "Priority"
+msgstr "Prioriteetti"
+
+msgid "Service"
+msgstr "Fyysinen liitäntä"
+
+msgid "Enable"
+msgstr "Ota käyttöön"
+
+msgid "Action"
+msgstr "Toiminto"
+
+msgid "settings.system.general"
+msgstr " "
+
+msgid "Timezone"
+msgstr "Aikavyöhyke"
+
+msgid "Time servers (NTP)"
+msgstr "NTP-palvelimet"
+
+msgid "General System Settings"
+msgstr "Yleiset järjestelmäasetukset"
+
+msgid "Loading"
+msgstr "Lataan..."
+
+msgid "Manage Router Users Rights"
+msgstr "Hallinnoi reitittimen käyttäjien oikeuksia"
+
+msgid "System Status"
+msgstr "Järjestelmän tila"
+
+msgid "Memory"
+msgstr "Muisti"
+
+msgid "Storage"
+msgstr "Tallennustila"
+
+msgid "Total number of processes: "
+msgstr "Käynnissä olevat prosessit:"
+
+msgid "Total CPU usage: "
+msgstr "Prosessorin käyttöaste:"
+
+msgid "status.system.processes.info"
+msgstr " "
+
+msgid "Processes"
+msgstr "Käynnissä olevat prosessit"
+
+msgid "System processes and CPU usage."
+msgstr "Järjestelmän prosessit ja suorittimen käyttöaste"
+
+msgid "Running Processes"
+msgstr "Käynnissä olevat prosessit"
+
+msgid "menu-settings-energy-title"
+msgstr "Virranhallinta"
+
+msgid "menu-settings-management-title"
+msgstr "Hallinta"
+
+msgid "menu-settings-configuration-title"
+msgstr "Konfiguraatio"
+
+msgid "menu-settings-services-title"
+msgstr "Palvelut"
+
+msgid "menu-settings-password-title"
+msgstr "Salanat"
+
+msgid "menu-settings-system-title"
+msgstr "Järjestelmä"
+
+msgid "menu-settings-hardware-buttons-title"
+msgstr "Laitteiston painikkeet"
+
+msgid "menu-settings-hardware-leds-title"
+msgstr "LEDs"
+
+msgid "menu-settings-hardware-title"
+msgstr "Laitteisto"
+
+msgid "menu-status-system-title"
+msgstr "Järjestelmä"
+
+msgid "menu-system-title"
+msgstr "Järjestelmä"
+
+msgid "menu-status-system-processes-title"
+msgstr "Prosessit"
+
+msgid "menu-settings-uci-title"
+msgstr "UCI"
+
+msgid "menu-settings-users-title"
+msgstr "Palvelut"
+
+#~ msgid "Release"
+#~ msgstr "Julkaisuaika:"
+
+#~ msgid "Target"
+#~ msgstr "Kohde"
+
+#~ msgid "List of NTP servers"
+#~ msgstr "Luettelo NTP-palvelimista"
+
+#~ msgid "NTP Settings"
+#~ msgstr "NTP-asetukset"
+
+#~ msgid "Set to Browser Time"
+#~ msgstr "Aseta selaimen aikaan"
+
+#~ msgid "menu-internet-services-ntp-title"
+#~ msgstr "NTP"

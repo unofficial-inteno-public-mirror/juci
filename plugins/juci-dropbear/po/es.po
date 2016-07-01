@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "Dropbear Instance on Interface: "
+msgstr "Dropbear-instanssi:"
+
+msgid "ANY"
+msgstr "APN"
+
+msgid "Please select a instance in the list to remove"
+msgstr "Valitse poistettava instanssi listasta"
+
+msgid "Unable to remove last instance"
+msgstr "Viimeistä instanssia ei voitu poistaa"
+
+msgid "Are you sure you want to remove this instance?"
+msgstr "Haluatko varmasti poistaa tämän vyöhykkeen?"
+
+msgid "Key ending with"
+msgstr "Avain joka loppuu"
+
+msgid "You need to insert the public key data!"
+msgstr "Julkisen avaimen tieto on lisättävä"
+
+msgid "Paste your key here:"
+msgstr "Liitä avaimesi tähän:"
+
+msgid "Add new SSH key"
+msgstr "Lisää uusi SSH-avain"
+
+msgid "Banner File"
+msgstr "Banner tiedosto"
+
+msgid "Name of a file to be printed before the user has authenticated successfully"
+msgstr "Tiedoston nimi tulostetaan ennen kuin käyttäjä on todennettu onnistuneesti"
+
+msgid "Banner File Path"
+msgstr "Bannerin tiedostopolku"
+
+msgid "Password Authentication"
+msgstr "Salasanan tunnistus"
+
+msgid "Port"
+msgstr "Portti"
+
+msgid "Listen Port"
+msgstr "Kuuntelu portti"
+
+msgid "Enable Root Password Auth"
+msgstr "Salli root salasana todennus"
+
+msgid "Enable Root Login"
+msgstr "Salli Root-käyttäjän Kirjautuminen"
+
+msgid "Enable Forwarded Ports"
+msgstr "Enable Forwarded Ports"
+
+msgid "Interface"
+msgstr "Fyysinen liitäntä"
+
+msgid "RSA Key File"
+msgstr "RSA Key File"
+
+msgid "DSS Key File"
+msgstr "DSS Key File"
+
+msgid "Connection Keep Alive"
+msgstr "Yhteyksien elossapito"
+
+msgid "Idle Timeout"
+msgstr "Aikakatkaisu"
+
+msgid "Dropbear SSH"
+msgstr "Dropbear SSH"
+
+msgid "General settings"
+msgstr "Yleiset asetukset"
+
+msgid "Start/Stop Service"
+msgstr "Käynnistä/Pysäytä"
+
+msgid "Start or stop service"
+msgstr "Käynnistä tai pysäytä palvelu"
+
+msgid "Enabled"
+msgstr "Käytössä"
+
+msgid "Enable/Disable starting SSH service during boot"
+msgstr "Ota käyttöön / poista käytöstä SSH-palvelu käynnistyksen aikana"
+
+msgid "Verbose logging"
+msgstr "Kattava lokitus"
+
+msgid "Set to 1 to enable verbose output by the start script"
+msgstr "Asetettu 1, joka ottaa käyttöön kattavan lokituksen"
+
+msgid "Dropbear Instances"
+msgstr "Dropbear SSH"
+
+msgid "settings.dropbear.instance"
+msgstr "Konfiguroi SSH-pääsy modeemiin."
+
+msgid "Accepted SSH keys"
+msgstr "Sallitut SSH-avaimet"
+
+msgid "menu-settings-management-dropbear-title"
+msgstr "SSH"
