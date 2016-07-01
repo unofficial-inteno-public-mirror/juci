@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "Unable to retreive igmptable from device!"
+msgstr "Ei voitu hakea IGMP-taulua laitteesta!"
+
+msgid "IGPM TV Status"
+msgstr "IPTV Tila"
+
+msgid "status.tv.info"
+msgstr "Tällä sivulla voit tarkistaa IPTV-palvelun tilan."
+
+msgid "Connection Status"
+msgstr "Yhteyden tila"
+
+msgid "IGMP TV Channels"
+msgstr "IGMP-TV-kanavat"
+
+msgid "Group IP"
+msgstr "Ryhmä IP"
+
+msgid "Client IP"
+msgstr "Asiakas IP"
+
+msgid "LAN Port"
+msgstr "LAN  portti"
+
+msgid "WAN Port"
+msgstr "WAN portti"
+
+msgid "Timeout"
+msgstr "Aikakatkaisu"
+
+msgid "menu-status-tv-title"
+msgstr "IPTV"

@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "Interface"
+msgstr "Fyysinen liitäntä"
+
+msgid "Network"
+msgstr "Verkko"
+
+msgid "Script"
+msgstr "Skripti"
+
+msgid "Web"
+msgstr "Web"
+
+msgid "Enabled"
+msgstr "Käytössä"
+
+msgid "Label"
+msgstr "Nimi"
+
+msgid "IP Retreival Method"
+msgstr "IP osoitteen hakutapa"
+
+msgid "Select Connection"
+msgstr "Valitse yhteys"
+
+msgid "Select Interface"
+msgstr "Valitse fyysinen liitäntä"
+
+msgid "Enter website to poll for ip address"
+msgstr "Syötä verkkosivun osoite IP-kyselyä varten"
+
+msgid "Script Path"
+msgstr "Script Path"
+
+msgid "Enter path to script on router"
+msgstr "Anna komentosarjalle kuvaava nimi"
+
+msgid "Provider"
+msgstr "Palveluntarjoaja"
+
+msgid "Choose DNS Provider"
+msgstr "Valitse DNS-palveluntarjoaja"
+
+msgid "Domain name"
+msgstr "Toimialue"
+
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Use HTTPS"
+msgstr "Käytä HTTPS:ää (salattu HTTP)"
+
+msgid "Enter DDNS Provider"
+msgstr "Valitse DNS-palveluntarjoaja"
+
+msgid "DDNS (Dynamic DNS)"
+msgstr "DDNS (Dynaaminen DNS)"
+
+msgid "ddns.config.info"
+msgstr ""
+"DDNS mahdollistaa yhteydenottamisen laitteeseen Internetistä isäntänimeä "
+"käyttämällä IP-osoitteen sijaan. Tarvitset tätä varten tilin DDNS "
+"palveluntarjoajaltasi."
+
+msgid "menu-internet-services-ddns-title"
+msgstr "DDNS"

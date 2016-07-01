@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid ""
+"A new system software upgrade is available. Do you want to visit upgrade "
+"page and upgrade now?"
+msgstr ""
+"Ohjelmistopäivitys on saatavilla. Haluatko avata päivityssivun ja päivittää "
+"nyt?"
+
+msgid "Do you want to keep your configuration?"
+msgstr "Haluatko säilyttää asetukset?"
+
+msgid ""
+"If you answer yes then your configuration will be saved before the upgrade "
+"and restored after the upgrade has completed. If you choose 'no' then all "
+"your current configuration will be reset to defaults."
+msgstr ""
+"Jos vastaat kyllä, niin asetukset säilytetään ohjelmiston päivityksen "
+"yhteydessä. Mikäli valitse \"ei\", niin otetaan käyttöön uuden ohjelmiston "
+"oletusasetukset."
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "Abort"
+msgstr "Keskeytä"
+
+msgid "Image check failed"
+msgstr "Ohjelmiston tarkistus epäonnistui"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Error: "
+msgstr "Virhe:"
+
+# /home/jari/GIT/IOPSYS/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Upgrading"
+msgstr "Päivitetään"
+
+msgid "New Software Available!"
+msgstr "Uusi ohjelmisto saatavilla!"
+
+msgid "No upgrade has been found!"
+msgstr "Päivitystä ei saatavilla!"
+
+msgid "USB upgrade check failed"
+msgstr "USB päivityksen tarkistus epäonnistui"
+
+msgid "Online upgrade check failed"
+msgstr "Verkkopäivityksen tarkistaminen epäonnistui"
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Downloading and verifying image..."
+msgstr "Ladataan ja tarkistetaan ohjelmistoa.."
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Uploading"
+msgstr "Lähetetään"
+
+msgid "Verifying image..."
+msgstr "Tarkistetaan ohjelmistoa.."
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Verifying"
+msgstr "Tarkistetaan"
+
+msgid "The server returned an error"
+msgstr "Palvelinvirhe"
+
+msgid "Upload completed!"
+msgstr "Lähetys valmis!"
+
+msgid ".w (JFFS Image)"
+msgstr ".w (JFFS Image)"
+
+msgid ".y (UBIFS Image)"
+msgstr ".y (UBIFS Image)"
+
+msgid "fs_image (RAW Rootfs Image)"
+msgstr "fs_image (RAW Rootfs Image)"
+
+msgid "You need to select a network!"
+msgstr "Valitse verkko!"
+
+msgid "Select image to upgrade"
+msgstr "Valitse päivitystiedosto"
+
+msgid "New software is available"
+msgstr "Uusi ohjelmisto on saatavilla"
+
+msgid "Firmware Upgrade"
+msgstr "Ohjelmistopäivitys"
+
+msgid "settings.upgrade.info"
+msgstr ""
+"Reititin tarkistaa palvelimelta automaattisesti viimeisimmän saatavilla "
+"olevan ohjelmiston. On myös mahdollista päivittää reitittimen ohjelmisto "
+"manuaalisesti mikäli se on välttämätöntä. Päivittäminen ei vaikuta nykyisiin "
+"asetuksiin."
+
+msgid "Current Firmware Version"
+msgstr "Nykyinen ohjelmistoversio"
+
+msgid "Online Update"
+msgstr "Online päivitys"
+
+msgid "settings.upgrade.online.info"
+msgstr ""
+"Mikäli palvelimella on saatavilla uudempi ohjelmisto, voidaan se päivittää "
+"verkon yli"
+
+msgid "Check for Upgrade"
+msgstr "Tarkista päivitykset"
+
+msgid "Install Upgrade"
+msgstr "Asenna päivitys"
+
+msgid "USB Firmware Upgrade"
+msgstr "USB päivitys"
+
+msgid "settings.upgrade.usb.info"
+msgstr ""
+"Mikäli reitittimeen kytketyllä USB:lla on saatavilla ohjelmisto voidaan se "
+"päivitttää tässä"
+
+msgid "Manual Firmware Upgrade"
+msgstr "Manuaalinen ohjelmistopäivitys"
+
+msgid "settings.upgrade.manual.info"
+msgstr " "
+
+msgid "Select firmware file to upload"
+msgstr "Valitse ladattava ohjelmisto"
+
+msgid "Start upgrade"
+msgstr "Aloita päivitys"
+
+msgid "Upgrade"
+msgstr "Päivitä"
+
+msgid "Online upgrade is disabled"
+msgstr "Online päivitys poissa käytöstä"
+
+msgid "USB upgrade is disabled"
+msgstr "USB päivitys poissa käytöstä"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Upgrade Options"
+msgstr "Tarkista päivitykset"
+
+msgid "settings.upgrade.options.info"
+msgstr "Valinnat"
+
+msgid "URL for file with latest image filename"
+msgstr "Uusimman ohjelmiston URL"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Upgrade URL base path"
+msgstr "Päivitysosoitteen polku"
+
+msgid "HTTP Directory"
+msgstr "HTTP kansio"
+
+msgid "Firmware image extension"
+msgstr "Firmware image extension"
+
+msgid "Online Upgrade"
+msgstr "Online päivitys"
+
+msgid "USB Upgrade"
+msgstr "USB päivitys"
+
+msgid "menu-settings-upgrade-title"
+msgstr "Ohjelmistopäivitys"
+
+msgid "menu-settings-upgrade-options-title"
+msgstr "Valinnat"

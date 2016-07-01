@@ -1,0 +1,953 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "Unmanaged"
+msgstr "Valvomaton"
+
+msgid "Static Address"
+msgstr "Kiinteä IP-osoite"
+
+msgid "DHCP v4"
+msgstr "DHCP IPv4"
+
+msgid "DHCP v6"
+msgstr "DHCPv6"
+
+msgid "PPP"
+msgstr "PPP"
+
+msgid "PPP over Ethernet"
+msgstr "PPP over Ethernet"
+
+msgid "PPP over ATM"
+msgstr "PPP over ATM"
+
+msgid "3G (ppp over GPRS/EvDO/CDMA or UTMS)"
+msgstr "3G (GPRS/EvDO/CDMA/UMTS)"
+
+msgid "4G (LTE/HSPA+)"
+msgstr ""
+
+msgid "QMI (USB modem)"
+msgstr "QMI (USB-modeemi)"
+
+msgid "NCM (USB modem)"
+msgstr "NCM (USB modeemi)"
+
+msgid "HNET (self-managing home network)"
+msgstr "HNET (itseohjautuva kotiverkko)"
+
+msgid "Point-to-Point Tunnel"
+msgstr "Point-to-Point Tunnel"
+
+msgid "IPv6 tunnel in IPv4 (6in4)"
+msgstr "IPv6 tunnel in IPv4"
+
+msgid "IPv6 tunnel in IPv4 (6to4)"
+msgstr "IPv6 tunnel in IPv4"
+
+msgid "Automatic IPv6 Connectivity Client"
+msgstr "Automaattinen IPv6 Connectivity Client"
+
+msgid "IPv6 rapid deployment"
+msgstr "IPv6 rapid deployment"
+
+msgid "Dual-Stack Lite"
+msgstr "Dual-Stack Lite"
+
+msgid "PPP over L2TP"
+msgstr "PPP over L2TP"
+
+msgid "Relayd Pseudo Bridge"
+msgstr "Relayd Pseudo Bridge"
+
+msgid "GRE Tunnel over IPv4"
+msgstr "GRE Tunnel over IPv4"
+
+msgid "Ethernet GRE over IPv4"
+msgstr "Ethernet GRE over IPv4"
+
+msgid "GRE Tunnel over IPv6"
+msgstr "GRE Tunnel over IPv6"
+
+msgid "Ethernet GRE over IPv6"
+msgstr "Ethernet GRE over IPv6"
+
+msgid "no device or network given"
+msgstr "laitetta tai verkkoa ei annettu"
+
+msgid "valid values are: 'no' and 48-64"
+msgstr "sallitut arvot ovat: 'ei' ja 48-64"
+
+msgid "value must be a valid MAC-48 address"
+msgstr "arvon on oltava kelvollinen MAC-48-osoite"
+
+msgid "Valid values are: auto, no, 0-64"
+msgstr "Sallitut arvot ovat: 'auto' ja 0-64"
+
+msgid "Network interface "
+msgstr "Luo Uusi Verkkoyhteys"
+
+msgid "Unnamed interface"
+msgstr "Interface"
+
+msgid " MUST have  a protocol set"
+msgstr "Protokollan on asetettava"
+
+msgid "Unmanaged networks need to be setup as a bridge"
+msgstr "Valvomattomat verkot on asetettava sillaksi"
+
+msgid "Unmanaged networks need at least one device in bridge"
+msgstr "Valmomattomalla verkolla täytyy olla vähintään yksi liitäntä sillassa"
+
+msgid "Either ipv4 or ipv6 address is needed"
+msgstr "Joko IPv4 tai IPv6 osoite tarvitaan"
+
+msgid "Physical interface unspecified"
+msgstr "Fyysinen liitäntä määrittelemättä"
+
+msgid "DHCP interface needs physical interface"
+msgstr "DHCP yhteys tarvitsee fyysisen liitännän"
+
+msgid "DHCPv6 interface needs physical interface"
+msgstr "DHCPv6 yhteys tarvitsee fyysisen liitännän"
+
+msgid "Modem device needed for PPP interface"
+msgstr "PPP liitäntä vaatii modeemilaitteen"
+
+msgid "PPPoE interface needs physical interface"
+msgstr "PPPoE yhteys vaatii fyysisen liitännän"
+
+msgid "Modem device needed for 3G interface"
+msgstr "Modeemilaite tarvitaan 3G liitäntää varten"
+
+msgid "Service type needed for 3G interface"
+msgstr "3G liitäntä vaatii palvelutyypin"
+
+msgid "APN needed for 3G interface"
+msgstr "APN tarvitaan 3G liitännässä"
+
+msgid "Device needed for 4G interface"
+msgstr "Laite tarvitaan 4G liitännässä"
+
+msgid "VPN Server needed for Point-to-Point tunnel"
+msgstr "Point-to-Point Tunnel"
+
+msgid "Remote IPv4 address needed for 6in4 interface"
+msgstr "Ulkoinen IPv4 osoite tarvitaan 6in4 yhteydelle"
+
+msgid "Local IPv6 address needed for 6in4 interface"
+msgstr "Paikallinen IPv6 osoite tarvitaan 6in4 yhteydelle"
+
+msgid "Remote IPv4 address needed for IPv6 rapid deployment interface"
+msgstr "Ulkoinen IPv4 osoite tarvitaan 6RD yhteydelle"
+
+msgid "IPv6 prefix needed for IPv6 rapid deployment interface"
+msgstr "IPv6 etuliite tarvitaan IPv6 RD yhteydelle"
+
+msgid "IPv6 prefix length needed for IPv6 rapid deployment interface"
+msgstr "IPv6 etuliitteen pituus tarvitaan 6RD yhteydelle"
+
+msgid "DS-Lite AFTR address needed for DS lite interface"
+msgstr "DS-Lite AFTR osoite tarvitaan DS lite yhteydelle"
+
+msgid "L2TP server needed for PPP over L2TP"
+msgstr "L2TP palvelin tarvitaan PPP L2TP yhteydelle"
+
+msgid "Password needed when username is set"
+msgstr "Salasana tarvitaan, kun käyttäjätunnus on asetettu"
+
+msgid "Unsupported protocol: "
+msgstr "Ei-tuettu protokolla:"
+
+msgid "IPv4 Routes needs an interface"
+msgstr "IPv4 reitit tarvitsevat yhteyden"
+
+msgid "IPv4 Routes needs a Target"
+msgstr "IPv4-reititystaulukko"
+
+msgid "IPv4 Routes needs a Netmask"
+msgstr "IPv4 reitit tarvitsevat aliverkon peitteen"
+
+msgid "IPv4 Routes needs a Gateway"
+msgstr "IPv4 Oletusyhdyskäytävä"
+
+msgid "IPv6 Routes needs an interface"
+msgstr "IPv6 reitit tarvitsevat yhteyden"
+
+msgid "IPv6 Routes needs a Target"
+msgstr "IPv6-reititystaulukko"
+
+msgid "IPv6 Routes needs a Gateway"
+msgstr "IPv6 Oletusyhdyskäytävä"
+
+msgid "Interface Name is needed"
+msgstr "Yhteyden nimi tarvitaan"
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-network-netifd/src/pages/internet-network.js
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-network-netifd/src/widgets/network-connection-create.js
+msgid "Interface names can only contain letters and numbers"
+msgstr "Yhteyksien nimet voivat sisältää vain numeroita ja kirjaimia"
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-network-netifd/src/pages/internet-network.js
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-network-netifd/src/widgets/network-connection-create.js
+msgid "Interface name may only be 12 characters long"
+msgstr "Yhteyden nimi voi olla korkeintaan 12 merkkiä"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "The new interface needs a name"
+msgstr "Uusi yhteys tarvitsee nimen"
+
+msgid "The new interface needs an interface type"
+msgstr "Uusi yhteys tarvitsee yhteystyypin"
+
+msgid "Pleace choose protocol for connection"
+msgstr "Valitse yhteyden protokolla"
+
+msgid "Please select a connection in the list!"
+msgstr "Valitse yhteys luettelosta!"
+
+msgid "Are you sure you want to delete this connection?"
+msgstr "Haluatko varmasti poistaa tämän yhteyden?"
+
+msgid "You need to select a device to add!"
+msgstr "Valitse lisättävä laite!"
+
+msgid "Standalone"
+msgstr "Normaali"
+
+msgid "AnyWAN"
+msgstr "AnyWAN"
+
+msgid "Bridge"
+msgstr "Silta"
+
+# /home/reidar/juci/plugins/juci-network-netifd/src/widgets/network-connection-dns-config.js
+msgid "All DNS-servers must be valid"
+msgstr "Kaikkien DNS-palvelimien tulee olla voimassa oleva"
+
+# /home/reidar/juci/plugins/juci-network-netifd/src/widgets/network-connection-dns-config.js
+msgid "All DNS-servers must be unique"
+msgstr "Kaikkien DNS-palvelimien tulee olla ainutlaatuisia"
+
+msgid "ERROR"
+msgstr "VIRHE"
+
+msgid "PENDING"
+msgstr "AVOIN"
+
+msgid "UP"
+msgstr "KÄYTÖSSÄ"
+
+msgid "DOWN"
+msgstr "EI KÄUYTÖSSÄ"
+
+msgid ""
+"Are you sure you want to switch? Your settings will be lost!<br />The only "
+"way to get it back is to reload the page"
+msgstr ""
+"Haluatko varmasti vaihtaa? Kaikki asetukset menetetään!<br />Takaisin pääsee "
+"vain päivittämällä sivun"
+
+msgid "You need to select a network!"
+msgstr "You need to select a network!"
+
+msgid "UMTS/GPRS"
+msgstr ""
+
+msgid "UMTS only"
+msgstr "Vain UMTS"
+
+msgid "GPRS only"
+msgstr "Vain GPRS"
+
+msgid "Try"
+msgstr "Try"
+
+msgid "Force"
+msgstr "Force"
+
+msgid "None"
+msgstr "None"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Disabled"
+msgstr "Pois käytöstä"
+
+msgid "Uplink"
+msgstr ""
+
+msgid "Downlink"
+msgstr ""
+
+msgid "Address Allocation"
+msgstr "Osoitejako"
+
+msgid "Address Assignment"
+msgstr "Osoitteen varaaminen"
+
+msgid "Please select a device in the list!"
+msgstr "Valitse laite luettelosta!"
+
+msgid "Are you sure you want to delete this device from bridge?"
+msgstr "Haluatko varmasti poistaa tämän laitteen sillasta?"
+
+msgid "network.interface.type.none.tab.title"
+msgstr " "
+
+msgid "You need to select a host!"
+msgstr "Valitse isäntäkone!"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+msgid "Edit LAN Settings"
+msgstr "IPv4-asetukset"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Edit DNS servers"
+msgstr "Valitse DNS-palveluntarjoaja"
+
+msgid "Network device"
+msgstr "Valitse verkkolaite"
+
+msgid "Select network device"
+msgstr "Valitse verkkolaite"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Displayname"
+msgstr "Nimi"
+
+msgid "VLAN Tag"
+msgstr "VLAN Tag"
+
+msgid "Device"
+msgstr "Laite"
+
+msgid "Ports"
+msgstr "Portit"
+
+msgid "Do you want to:"
+msgstr "Haluatko:"
+
+msgid "Interface Name"
+msgstr "Liitännän Nimi"
+
+msgid "Protocol"
+msgstr "Protokolla"
+
+msgid "Interface Type"
+msgstr "Liitännän Tyyppi"
+
+msgid "Add/Remove custom DNS Servers"
+msgstr "Lisää/poista mukautettuja DNS palvelimia"
+
+msgid "General"
+msgstr "Yleiset"
+
+msgid "Choose Configuration Option"
+msgstr "Valitse Konfiguraatiovaihtoehto"
+
+msgid "Physical Settings"
+msgstr "IPv4-asetukset"
+
+msgid "Advanced"
+msgstr "Lisäasetukset"
+
+msgid "Bring up on boot"
+msgstr "Bring-Up on Boot"
+
+msgid "Use gateway metric"
+msgstr "Käytä reitittimen metric-arvoa"
+
+msgid "Override MAC address"
+msgstr "Override MAC Address"
+
+msgid "Override MTU"
+msgstr "Override MTU"
+
+msgid "Method"
+msgstr "Method"
+
+msgid "DHCP"
+msgstr "DHCP IPv4"
+
+msgid "Select Network"
+msgstr "Valitse verkko"
+
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr "Ota käyttöön IPv6 neuvottelu PPP-linkissä"
+
+msgid "Use default gateway"
+msgstr "Oletusreitti"
+
+msgid "If unchecked, no default route is configured"
+msgstr "Jos ei valittu, oletusreittä ei konfiguroida"
+
+msgid "Modem init timeout"
+msgstr "Aikakatkaisu"
+
+msgid "Maximum amount of seconds to wait for the modem to become ready"
+msgstr "Enimmäismäärä sekunteita mitä odotetaan modeemia"
+
+msgid "Use DNS servers advertised by peer"
+msgstr "Käytä yhdyskäytävän mainostamia DNS palvelimia"
+
+msgid "If unchecked, the advertised DNS server addresses are ignored"
+msgstr "Jos ei valittuna, mainostettuja DNS palvelimien osoitteita ei käytetä"
+
+msgid "LCP echo failure threshold"
+msgstr "LCP echo vian alaraja"
+
+msgid ""
+"Presume peer to be dead after given amount of LCP echo failures, use 0 to "
+"ignore failures"
+msgstr ""
+"Oleta, että yhdyskäytävä ei toimi annetun echo LCP raja-arvon jälkeen .Käytä "
+"0 ohittaaksesi virheet"
+
+msgid "LCP echo interval"
+msgstr "LCP echo intervalli"
+
+msgid ""
+"Send LCP echo requests at the given interval in seconds, only effective in "
+"conjunction with failure threshold"
+msgstr ""
+
+msgid "Inactivity timeout"
+msgstr "Toimimattomuuden aikakatkaisu"
+
+msgid ""
+"Close inactive connection after the given amount of seconds, use 0 to "
+"persist connection"
+msgstr ""
+"Sulje toimimaton yhteys tietyn aikavälin jälkeen. Käytä 0 pakotettuun "
+"yhteyteen"
+
+msgid "Modem device"
+msgstr "Valitse modeemi"
+
+msgid "Service Type"
+msgstr "Palvelut"
+
+msgid "APN"
+msgstr "APN"
+
+msgid "PIN-code"
+msgstr "PIN-koodi"
+
+msgid "PAP/CHAP Username"
+msgstr "Käyttäjänimi"
+
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+msgid "PAP/CHAP Password"
+msgstr "Salasana"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Use broadcast flag"
+msgstr "Käytä broadcast flag"
+
+msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
+msgstr "Jotkin operaattorit vaativat. Esim Charter DOCSIS 3:n kanssa"
+
+msgid "Client ID to send when requesting DHCP"
+msgstr "Client ID to send when requesting DHCP"
+
+msgid "Client ID"
+msgstr "Client ID"
+
+msgid "Vendor Class to send when requesting DHCP"
+msgstr "Client ID to send when requesting DHCP"
+
+msgid "Vendo Class"
+msgstr "Vendor Class"
+
+msgid "Hostname to send when requesting DHCP"
+msgstr "Client ID to send when requesting DHCP"
+
+msgid "Hostname"
+msgstr "Isäntäkoneen nimi"
+
+msgid "Default gateway"
+msgstr "Oletusreitti"
+
+msgid "Use TTL on tunnel interface"
+msgstr "Käytä TTL tunneliyhteydessä"
+
+msgid "Local IPv4 address"
+msgstr "Osoite"
+
+msgid "Leave empty to use the current WAN address"
+msgstr "Jätä tyhjäksi käyttääksesi nykyistä WAN osoitetta"
+
+msgid "Remote IPv4 address"
+msgstr "Osoite"
+
+msgid ""
+"This is usually the address of the nearest PoP operated by the tunnel broker"
+msgstr "Tämä on yleensä lähimmän PoP tunnelikytkimen osoite"
+
+msgid "Local IPv6 address"
+msgstr "Osoite"
+
+msgid ""
+"This is the local endpoint address assigned by the tunnel broker, it usually "
+"ends with :2"
+msgstr ""
+"Tämä on yleensä paikallinen päätepiste jonka tunnelikytkin antaa ja se "
+"yleensä päättyy :2"
+
+msgid "IPv6 routed prefix"
+msgstr "IPv6 etuliite"
+
+msgid ""
+"This is the prefix routed to you by the tunnel broker for use by clients"
+msgstr "Tämä on tunnelikytkimen reititetty etuliite jota asiakaskoneet käyttää"
+
+msgid "IPv6 prefix"
+msgstr "IPv6 etuliite"
+
+msgid "Dynamic tunnel"
+msgstr "Dynaaminen tunneli"
+
+msgid "Enable HE.net dynamic endpoint update"
+msgstr "Ota käyttöön HE.net dynaaminen päätepistepäivitys"
+
+msgid "Tunnel ID"
+msgstr "Tunnelin ID"
+
+msgid "HE.net username"
+msgstr "Käyttäjänimi"
+
+msgid "This is the plain username for logging into the account"
+msgstr "Tämä on tekstimuotoinen käyttäjänimi tilille kirjautumista varten"
+
+msgid "HE.net password"
+msgstr "Varmuuskopiotiedoston salasana"
+
+msgid ""
+"This is either the Update Key configured for the tunnel or the account "
+"password if no update key has been configured"
+msgstr ""
+"Tämä on joko päivititysavain tunnelin konfigurointia varten tai tilin "
+"salasana mikäli päivitysavainta ei ole konfiguroitu"
+
+msgid "The IPv4 address of the relay"
+msgstr ""
+
+msgid "The IPv6 prefix assigned to the provider, usually ends with ::"
+msgstr ""
+
+msgid "IPv6 prefix length"
+msgstr "IPv6 Assigned Prefix Length"
+
+msgid "The length of the IPv6 prefix in bits"
+msgstr ""
+
+msgid "IPv4 prefix length"
+msgstr "IPv6 Assigned Prefix Length"
+
+msgid "If uncchecked, no default rout is configured"
+msgstr "Jos ei valittu, niin oletusreittiä ei konfiguroida"
+
+msgid "help If unchecked, the advertised DNS server addresses are ignored"
+msgstr ""
+
+msgid "Additional DHCP options to request from the server"
+msgstr "DHCP:n lisäoptiot joita pyydetään palvelimelta"
+
+msgid "Custom client ID"
+msgstr "Client ID"
+
+msgid "Custom Vendor class"
+msgstr "Kustumoitu vendor class"
+
+msgid "Hostname to include in DHCP requests"
+msgstr "DHCP pyyntöön liitettävä isäntänimi"
+
+msgid "Create default route"
+msgstr "Määritä oletusreitiksi"
+
+msgid "Automatically set up default route for this interface"
+msgstr "Aseta oletusreitti automaattisesti tälle yhteydelle"
+
+msgid "Custom delegated IPv6-prefix"
+msgstr "Custom Delegated IPv6 Prefix"
+
+msgid "Request IPv6 address"
+msgstr "Request IPv6 address"
+
+msgid "Request Prefix Length"
+msgstr "Request Prefix Length"
+
+msgid "Tunnel Link"
+msgstr ""
+
+msgid "DS-Lite AFTR address"
+msgstr ""
+
+msgid "Mode"
+msgstr "Tila"
+
+msgid "IPv6 Assign"
+msgstr "IPv6 Määritys"
+
+msgid "Prefix Size"
+msgstr "Prefix Size"
+
+msgid "IPv4 Assign"
+msgstr "IPv4 määritys"
+
+msgid "DNS Name"
+msgstr "DNS Nimi"
+
+msgid "L2TP Server"
+msgstr "DHCP-palvelin"
+
+msgid "PAP/CHAP username"
+msgstr "PAP/CHAP käyttäjänimi"
+
+msgid "PAP/CHAP password"
+msgstr "Salasana"
+
+msgid "Enable IPv negotiation on the PPP link"
+msgstr ""
+
+msgid "Select Modem Device"
+msgstr "Valitse modeemi"
+
+msgid "username"
+msgstr "Käyttäjänimi"
+
+msgid "password"
+msgstr "Salasana"
+
+msgid "Access Concentrator"
+msgstr ""
+
+msgid "Leave empty to autodetect"
+msgstr "Jätä tyhjäksi automaattista havaintoa varten"
+
+msgid "auto"
+msgstr "automaattinen"
+
+msgid "Service Name"
+msgstr "Palvelut"
+
+msgid "VPN Server"
+msgstr "DHCP-palvelin"
+
+msgid "IPv4 Address"
+msgstr "IPv4-osoite"
+
+msgid "IPv4 Subnet Mask"
+msgstr "IPv4 Aliverkon peite"
+
+msgid "IPv4 Broadcast"
+msgstr "IPv4 Osoite"
+
+msgid "IPv4 Default Gateway"
+msgstr "IPv4 Oletusyhdyskäytävä"
+
+msgid "IPv6 assignment length"
+msgstr "IPv6 Assigned Prefix Length"
+
+msgid "Leave empty for Disabled"
+msgstr "Tyhjä = ei käytössä"
+
+msgid "IPv6 Assigned Prefix Hint"
+msgstr "IPv6 Assigned Prefix Hint"
+
+msgid "Prefix hint"
+msgstr "Prefix hint"
+
+msgid "IPv6 Address"
+msgstr "IPv6-osoite"
+
+msgid "Static IPv6 Address"
+msgstr "Kiinteä IPv6-osoite"
+
+msgid "IPv6 Default Gateway"
+msgstr "IPv6 Oletusyhdyskäytävä"
+
+msgid "Default IPv6 Gateway"
+msgstr "IPv6 Oletusyhdyskäytävä"
+
+msgid "IPv6 Prefix"
+msgstr "IPv6 etuliite"
+
+msgid "IPv6 Address Mask"
+msgstr "IPv6 maski"
+
+msgid "IPv4 Settings"
+msgstr "IPv4-asetukset"
+
+msgid "IPv6 Settings"
+msgstr "IPv6-asetukset"
+
+msgid "Select Base Device"
+msgstr "Valitse liitäntä"
+
+msgid "Device ID"
+msgstr "Laite ID"
+
+msgid "Base Device"
+msgstr "Fyysinen liitäntä"
+
+msgid "ID"
+msgstr "Tunnus/ID"
+
+msgid "Select Connected Host"
+msgstr "Valitse Yhdistetty Isäntäkone"
+
+msgid "Select a host"
+msgstr "Valitse isäntäkone"
+
+msgid "Aquired DNS servers"
+msgstr "Hankittu DNS palvelin"
+
+msgid "Aquired from"
+msgstr "Hankittu"
+
+msgid "For {{interface['.name'].toUpperCase()}} interface"
+msgstr "{{interface['.name'].toUpperCase()}} liitännälle"
+
+msgid "LAN"
+msgstr "Lähiverkko (LAN)"
+
+msgid "No Lan networks"
+msgstr "Verkko"
+
+msgid "No Clients in {{network['.name'].toUpperCase()}} network"
+msgstr "Ei asiakaslaitteita {{network['.name'].toUpperCase()}} verkossa"
+
+msgid "WAN"
+msgstr "Internet (WAN)"
+
+msgid "ONLINE"
+msgstr "PÄÄLLÄ"
+
+msgid "OFFLINE"
+msgstr "POIS PÄÄLTÄ"
+
+msgid "Connections"
+msgstr "Yhteydet"
+
+msgid "settings.network.info"
+msgstr ""
+"Tällä sivulla määritellään verkkoyhteydet. Mikäli LAN-yhteyden DHCP otetaan "
+"käytttöön, reititin jakaa automaattisesti IP-osoitteen paikalliseen verkkoon "
+"yhdistetyille laitteille. Staattista DHCP:tä käyttämällä on mahdollista "
+"jakaa aina sama IP-osoite halutulle laitteelle."
+
+msgid "Static Routes"
+msgstr "Staattiset reitit"
+
+msgid "internet.lan.routes.info"
+msgstr " "
+
+msgid "IPv4 Routes"
+msgstr "IPv4-reititystaulukko"
+
+msgid "Target IP Address"
+msgstr "Kohdeosoite"
+
+msgid "Netmask"
+msgstr "Aliverkko"
+
+msgid "Default Gateway"
+msgstr "Oletusreitti"
+
+msgid "0"
+msgstr ""
+
+msgid "Iface MTU"
+msgstr "Liitännän Tyyppi"
+
+msgid "IPv6 Routes"
+msgstr "IPv6-reititystaulukko"
+
+msgid "IPv6 Gateway"
+msgstr "IPv6 Oletusyhdyskäytävä"
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "Target"
+msgstr "Kohde"
+
+msgid "Gateway"
+msgstr "Modeemi"
+
+msgid "Metric"
+msgstr ""
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "Services"
+msgstr "Palvelut"
+
+msgid "internet.services.info"
+msgstr ""
+"Palvelut-sivulla voidaan konfiguroida erilaisia ohjelmia kuten Verkkojakoja "
+"ja MiniDLNA"
+
+# /home/jari/GIT/IOPSYS/juci/plugins/juci-network-netifd/src/pages/netifd-status-clients.html
+msgid "N/A"
+msgstr "Ei saatavilla"
+
+msgid "Connected Clients"
+msgstr "Yhdistetyt laitteet"
+
+msgid "MAC Address"
+msgstr "MAC Osoite"
+
+msgid "VLAN Configuration"
+msgstr "VLAN konfiguraatio"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "status.status.info"
+msgstr ""
+"Tällä sivulla on yleisnäkymä laitteen pääparameterista. Tämä voi auttaa "
+"sinua optimoimaan modeemisi tai tunnistamaan ongelmia."
+
+msgid "IP Address"
+msgstr "IP osoite"
+
+msgid "Primary DNS"
+msgstr "Primary DNS"
+
+msgid "Secondary DNS"
+msgstr "Secondary DNS"
+
+msgid "Line Status"
+msgstr "Linjan tila"
+
+msgid "Active Connections"
+msgstr "Aktiivisia yhteyksiä"
+
+msgid "Connections for each Device"
+msgstr "Laitteiden yhteydet"
+
+msgid "status.nat.connections.info"
+msgstr " "
+
+msgid "NAT Connection Table"
+msgstr "NAT yhteystaulu"
+
+msgid "status.nat.info"
+msgstr "NAT"
+
+msgid "status.network.routes.info"
+msgstr "Reitit"
+
+msgid "Routing Status"
+msgstr "Reititystila"
+
+msgid "ARP Table"
+msgstr "ARP taulu"
+
+msgid "IP address"
+msgstr "IP-osoite"
+
+msgid "MAC address"
+msgstr "MAC osoite"
+
+msgid "IPv4 Routing Table"
+msgstr "IPv4-reititystaulukko"
+
+msgid "IPv4 address"
+msgstr "IPv4 Osoite"
+
+msgid "Genmask"
+msgstr "Aliverkko"
+
+msgid "IPv6 Routing Table"
+msgstr "IPv6-reititystaulukko"
+
+msgid "IPv6 address"
+msgstr "IPv6 Osoite"
+
+msgid "Next Hop"
+msgstr "Next Hop"
+
+msgid "IPv6 Neighbors Table"
+msgstr "IPv6 Neighbors Table"
+
+msgid "No IPv6 devices connected"
+msgstr "Ei yhdistettyjä  IPv6-laitteita"
+
+msgid "IPv6 status"
+msgstr "IPv6 Tila"
+
+msgid "Router"
+msgstr "Reititin"
+
+msgid "menu-network-title"
+msgstr "Verkko"
+
+msgid "menu-netifd-vlan-config-title"
+msgstr "menu-netifd-vlan-config-title"
+
+msgid "menu-internet-services-title"
+msgstr "Palvelut"
+
+msgid "menu-status-network-nat-title"
+msgstr "NAT"
+
+msgid "menu-internet-network-title"
+msgstr "Verkko"
+
+msgid "menu-netifd-status-clients-title"
+msgstr "Clients"
+
+msgid "menu-status-network-routes-title"
+msgstr "Reitit"
+
+msgid "menu-status-network-title"
+msgstr "Verkko"
+
+msgid "menu-internet-routes-title"
+msgstr "Reitit"
+
+#~ msgid ""
+#~ "A new ethernet device has been connected to your router. Do you want to "
+#~ "add it to a network?"
+#~ msgstr ""
+#~ "Uusi ethernet-laite on kytketty reitittimeen. Haluatko lisätä sen "
+#~ "verkkoon?"
