@@ -18,16 +18,16 @@
 		<juci-config-line title="{{'Voice Activity Detection'|translate}}">
 			<juci-select ng-items="vads" ng-model="model.vad.value"></juci-select>
 		</juci-config-line>
-		<juci-config-line title="{{'Comfort Noice Generation'|translate}}">
+		<juci-config-line title="{{'Comfort Noise Generation'|translate}}">
 			<juci-select ng-items="noises" ng-model="model.noise.value"></juci-select>
 		</juci-config-line>
-		<juci-config-line title="{{'Echo cancellation'|translate}}">
+		<juci-config-line title="{{'Echo Cancellation'|translate}}">
 			<switch ng-model="model.echo_cancel.value" class="green"/>
 		</juci-config-line>
-		<juci-config-line title="{{'Transmit gain'|translate}}">
+		<juci-config-line title="{{'Transmit Gain'|translate}}">
 			<input type="number" min="-96" max="32" class="form-control" ng-model="model.txgain.value" />
 		</juci-config-line>
-		<juci-config-line title="{{'Receive gain'|translate}}">
+		<juci-config-line title="{{'Receive Gain'|translate}}">
 			<input type="number" min="-96" max="32" class="form-control" ng-model="model.rxgain.value" />
 		</juci-config-line>
 	</juci-config-lines>

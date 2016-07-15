@@ -9,7 +9,7 @@
 		<juci-config-line ng-show="false" title="{{ 'Incoming calls to' | translate }}">
 			<juci-select ng-items="targets" ng-model="model.target.value"></juci-select>
 		</juci-config-line>
-		<juci-config-line title="{{ 'SIP domain name' | translate }}">
+		<juci-config-line title="{{ 'SIP Domain Name' | translate }}">
 			<input type="text" class="form-control" ng-model="model.domain.value" placeholder="{{'Domain name' | translate }}" />
 		</juci-config-line>
 		<juci-config-line title="{{'SIP Username'|translate}}" help="{{' The User id for the account, may be a phone number' | translate}}">
@@ -18,7 +18,7 @@
 		<juci-config-line title="{{'SIP Authentication Name'|translate}}" help="{{'Used in combination with password to register against SIP server' | translate}}">
 			<input type="text" class="form-control" ng-model="model.authuser.value" placeholder="{{'Auth User'|translate}}"/>
 		</juci-config-line>
-		<juci-config-line title="{{'SIP Password'|translate}}" help="{{'When your password is saved, it disappears from this field and is not displayed for your protection. The previously saved password will be changed only when you enter a value different from the saved one.' | translate }}">
+		<juci-config-line title="{{'SIP Password'|translate}}" help="{{'Password is hidden for your protection. To change the password, enter a new one in the field.' | translate }}">
 			<input type="{{(!showPassword)?'password':'text'}}" class="form-control" ng-model="model.secret.value" />
 		</juci-config-line>
 		<juci-config-line>

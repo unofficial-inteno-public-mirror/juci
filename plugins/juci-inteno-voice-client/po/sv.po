@@ -224,7 +224,7 @@ msgstr "Inga Konton"
 msgid "Advanced Line Settings"
 msgstr "Avancerade Linje Inställningar"
 
-msgid "Locale selecton"
+msgid "Locale Selection"
 msgstr "Land sektion"
 
 msgid "A restart is required for country changes to take effect"
@@ -236,31 +236,31 @@ msgstr "Aktivera Jitter Buffer"
 msgid "Force Jitter Buffer"
 msgstr "Tvinga Jitter Buffer"
 
-msgid "Jitter Buffer implementation"
+msgid "Jitter Buffer Implementation"
 msgstr "Jitter Buffer implementering"
 
-msgid "Maximum Jitter Buffer size [ms]"
-msgstr "Maximum Jitter Buffer size [ms]"
+msgid "Maximum Jitter Buffer Size [ms]"
+msgstr "Maximum Jitter Buffer Size [ms]"
 
 msgid "Enable Packet Loss Concealment"
 msgstr "Aktivera döljande av paket förlust"
 
-msgid "Inter-digit timeout [ms]"
-msgstr "Inter-digit timeout [ms]"
+msgid "Inter-Digit Timeout [ms]"
+msgstr "Inter-Digit Timeout [ms]"
 
 msgid "Custom Dialplan"
 msgstr "Manuell Dialplan"
 
-msgid "Enable incomming dialplan"
+msgid "Enable Incoming Dialplan"
 msgstr "Aktivera inkommande dialplan"
 
-msgid "Enable outgoing dialplan"
+msgid "Enable Outgoing Dialplan"
 msgstr "Aktivera utgående dialplan"
 
-msgid "Enable custom hangup"
+msgid "Enable Custom Hangup"
 msgstr "Aktivera egna påläggningar"
 
-msgid "All ports Extension"
+msgid "All Ports Extension"
 msgstr "Telefontillägg"
 
 msgid "Test Audio Extension"
@@ -302,16 +302,16 @@ msgstr "Call-id restriktion"
 msgid "Voice Activity Detection"
 msgstr "Voice Activity Detection"
 
-msgid "Comfort Noice Generation"
-msgstr "Comfort Noice Generation"
+msgid "Comfort Noise Generation"
+msgstr "Comfort Noise Generation"
 
-msgid "Echo cancellation"
-msgstr "Echo cancellation"
+msgid "Echo Cancellation"
+msgstr "Echo Cancellation"
 
-msgid "Transmit gain"
+msgid "Transmit Gain"
 msgstr "Sändnings vinst"
 
-msgid "Receive gain"
+msgid "Receive Gain"
 msgstr "Mottagen vinst"
 
 msgid "Voice Lines"
@@ -329,7 +329,7 @@ msgstr "Avancerade SIP inställningar"
 msgid "Sip Proxy servers"
 msgstr "Sip Proxy server"
 
-msgid "Allow incomming calls from the specified proxies"
+msgid "Allow incoming calls from the specified proxies"
 msgstr "Tillåt inkommande sammtal från den specifierade proxien"
 
 msgid "Add SIP Proxy"
@@ -369,14 +369,14 @@ msgid "Realm"
 msgstr "Rike"
 
 msgid ""
-"Realm for digest authentication, set this to your host name or domain name"
+"Digest authentication realm (host name or domain name)"
 msgstr ""
-"Realm for digest authentication, set this to your host name or domain name"
+"Digest authentication realm (host name or domain name)"
 
 msgid "Localnet"
 msgstr "Lokalt nät"
 
-msgid "Network addresses that are considered inside of the NATted network"
+msgid "Network addresses that are considered local for NAT purposes"
 msgstr "Nätverksaddress som övervägs inuti det NATade nätverket"
 
 msgid "Add Localnet"
@@ -436,7 +436,7 @@ msgstr "DNS Hanterarens Uppdaterings intervall"
 msgid "Refresh intervall"
 msgstr "Uppdaterings intervall"
 
-msgid "Line suffix in contact header"
+msgid "Line suffix in Contact Header"
 msgstr "Linje suffix i kontakt-huvudet"
 
 msgid ""
@@ -457,13 +457,13 @@ msgstr "Ljud DiffServ"
 msgid "Differentiated services/TOS for Audio data. Recommended value: ef"
 msgstr "Differentiated services/TOS for Audio data. Recommended value: ef"
 
-msgid "Congestion tone"
+msgid "Congestion Tone"
 msgstr "Upptaget signal"
 
 msgid "Tone to play on congestion"
 msgstr "Ljud att spela upp vid upptaget"
 
-msgid "STUN server"
+msgid "STUN Server"
 msgstr "STUN Server"
 
 msgid "Leave empty to disable the STUN monitor"
@@ -472,13 +472,13 @@ msgstr "Lämna tom för att inaktivera STUN övervakning"
 msgid "TLS/SSL Version"
 msgstr "TLS/SSL Version"
 
-msgid "Cipher string"
+msgid "Cipher String"
 msgstr "Cipher Sträng"
 
 msgid "Trusted CA"
 msgstr "Betrodd CA"
 
-msgid "Don't forget to press save to save your changes"
+msgid "Important: Click save to store changes"
 msgstr "Glöm inte att spara dina ändringar"
 
 msgid "Account Name"
@@ -490,7 +490,7 @@ msgstr "Inkommande samtal till"
 msgid "Mailbox"
 msgstr "Mejlbox"
 
-msgid "SIP domain name"
+msgid "SIP Domain Name"
 msgstr "SIP domännamn"
 
 msgid "Domain name"

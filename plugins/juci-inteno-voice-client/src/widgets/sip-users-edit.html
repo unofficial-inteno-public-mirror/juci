@@ -12,7 +12,7 @@
 		<juci-config-line title="{{'Username'|translate}}" help="{{ 'The User id for the account (defaultuser)' | translate }}">
 			<input type="text" ng-model="model.user.value" class="form-control"></switch>
 		</juci-config-line>
-		<juci-config-line title="{{'Password'|translate}}" help="{{ 'When your password is saved, it disappears from this field and is not displayed for your protection. The previously saved password will be changed only when you enter a value different from the saved one.' | translate }}">
+		<juci-config-line title="{{'Password'|translate}}" help="{{ 'Password is hidden for your protection. To change the password, enter a new one in the field.' | translate }}">
 			<input type="{{(!showPassword)?'password':'text'}}" ng-model="model.password.value" class="form-control"></switch>
 		</juci-config-line>
 		<juci-config-line>

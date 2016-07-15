@@ -2,7 +2,7 @@
 	<juci-config-section>
 		<juci-config-heading>{{ 'Advanced SIP Settings' | translate }}</juci-config-heading>
 		<juci-config-lines>
-			<juci-config-line title="{{'Sip Proxy servers'|translate}}" help="{{ 'Allow incomming calls from the specified proxies' | translate }}">
+			<juci-config-line title="{{'Sip Proxy servers'|translate}}" help="{{ 'Allow incoming calls from the specified proxies' | translate }}">
 				<tags-input ng-model="proxys" display-property="label" min-length="5" on-tag-added="onProxyAdded()"
 					add-on-space="true" add-on-blur="false" placeholder="{{'Add SIP Proxy' | translate}}">
 				</tags-input>
@@ -29,10 +29,10 @@
 			<juci-config-line title="{{ 'Register Interval' | translate }}" help="{{ 'Time in seconds between registration attempts' | translate }}">
 				<input type="number" class="form-control" ng-model="sip.dnsmgr_refresh_interval.value" />
 			</juci-config-line>
-			<juci-config-line title="{{ 'Realm' | translate }}" help="{{ 'Realm for digest authentication, set this to your host name or domain name' | translate }}">
+			<juci-config-line title="{{ 'Realm' | translate }}" help="{{ 'Digest authentication realm (host name or domain name)' | translate }}">
 				<input type="text" class="form-control" ng-model="sip.realm.value" />
 			</juci-config-line>
-			<juci-config-line title="{{'Localnet'|translate}}" help="{{ 'Network addresses that are considered inside of the NATted network' | translate }}">
+			<juci-config-line title="{{'Localnet'|translate}}" help="{{ 'Network addresses that are considered local for NAT purposes' | translate }}">
 				<tags-input ng-model="localnets" display-property="label" min-length="5" on-tag-added="onLocalnetAdded()"
 					add-on-space="true" add-on-blur="false" placeholder="{{'Add Localnet' | translate}}">
 				</tags-input>
@@ -61,7 +61,7 @@
 			<juci-config-line title="{{ 'DNS Manager Refresh Interval' | translate }}" help="{{ 'Refresh intervall' | translate }}">
 				<input type="number" min="0" class="form-control" ng-model="sip.dnsmgr_refresh_interval.value" />
 			</juci-config-line>
-			<juci-config-line title="{{ 'Line suffix in contact header' | translate }}" help="{{ 'Add a suffix indicating which lines are called to the sip contact header' | translate }}">
+			<juci-config-line title="{{ 'Line suffix in Contact Header' | translate }}" help="{{ 'Add a suffix indicating which lines are called to the sip contact header' | translate }}">
 				<switch clas="green" ng-model="sip.contact_line_suffix.value" />
 			</juci-config-line>
 			<juci-config-line title="{{ 'SIP DiffServ' | translate }}" help="{{ 'Differentiated services/TOS for SIP data. Recommended value: cs3' | translate }}">
@@ -70,25 +70,25 @@
 			<juci-config-line title="{{ 'Audio DiffServ' | translate }}" help="{{ 'Differentiated services/TOS for Audio data. Recommended value: ef' | translate }}">
 				<input type="text" class="form-control" ng-model="sip.tos_audio.value" />
 			</juci-config-line>
-			<juci-config-line title="{{ 'Congestion tone' | translate }}" help="{{ 'Tone to play on congestion' | translate }}">
+			<juci-config-line title="{{ 'Congestion Tone' | translate }}" help="{{ 'Tone to play on congestion' | translate }}">
 				<juci-select ng-items="congest_tones" ng-model="sip.congestiontone.value"></juci-select>
 			</juci-config-line>
-			<juci-config-line title="{{ 'STUN server' | translate }}" help ="{{ 'Leave empty to disable the STUN monitor' | translate }}">
+			<juci-config-line title="{{ 'STUN Server' | translate }}" help ="{{ 'Leave empty to disable the STUN monitor' | translate }}">
 				<input type="text" class="form-control" ng-model="sip.stun_server.value" />
 			</juci-config-line>
 			<juci-config-line title="{{ 'TLS/SSL Version' | translate }}">
 				<juci-select ng-items="ssl_versions" ng-model="sip.tls_version.value"></juci-select>
 			</juci-config-line>
-			<juci-config-line title="{{ 'Cipher string' | translate }}">
+			<juci-config-line title="{{ 'Cipher String' | translate }}">
 				<input tupe="text" class="form-control" ng-model="sip.tls_cipher.value" />
 			</juci-config-line>
-			<h5 translate>Trusted CA</h5>
+			<juci-config-line title="{{ 'Trusted CA' | translate }}" help ="{{ 'Issuer certificates in PEM-format. Paste the full certificate including '-----BEGIN CERTIFICATE-----' and '-----END CERTIFICATE-----'.' | translate }}">
 			<div class="form-group {{ ssl.value !== ssl.ovalue ? 'has-error': ''}} {{ ssl.saved != undefined ? 'has-success' : ''}}">
 				<textarea rows="8" ng-model="ssl.value" class="form-control"></textarea>
 				<button class="btn btn-default" style="margin:5px;float:right" ng-click="save_ssl()">Save</button>
-				<span ng-hide="ssl.value === ssl.ovalue" class="label label-danger" translate>Don't forget to press save to save your changes</span>
+				<span ng-hide="ssl.value === ssl.ovalue" class="label label-danger" translate>Important: Click <b>save</b> to store changes</span>
 			</div>
-			<p style="font-size: 12px">Issuer certificates in PEM-format. Paste the full certificate including '-----BEGIN CERTIFICATE-----' and '-----END CERTIFICATE-----'.</p>
+			</juci-config-line>
 		</juci-config-lines>
 	</juci-config-section>
 </div>

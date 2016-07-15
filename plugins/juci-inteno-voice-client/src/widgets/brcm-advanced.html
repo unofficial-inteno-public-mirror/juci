@@ -2,7 +2,7 @@
 	<juci-config-section>
 		<juci-config-heading>{{ 'Advanced Line Settings' | translate }}</juci-config-heading>
 		<juci-config-lines>
-			<juci-config-line title="{{ 'Locale selecton' | translate }}" help="{{ 'A restart is required for country changes to take effect' | translate }}">
+			<juci-config-line title="{{ 'Locale Selection' | translate }}" help="{{ 'A restart is required for country changes to take effect' | translate }}">
 				<juci-select ng-items="languages" on-change="on_language_change()" ng-model="brcm.country.value"></juci-select>
 			</juci-config-line>
 			<juci-config-line title="{{ 'Enable Jitter Buffer' | translate }}">
@@ -11,16 +11,16 @@
 			<juci-config-line ng-show="brcm.jbenable.value" title="{{ 'Force Jitter Buffer' | translate }}">
 				<switch class="green" ng-model="brcm.jbforce.value" />
 			</juci-config-line>
-			<juci-config-line ng-show="brcm.jbenable.value" title="{{ 'Jitter Buffer implementation' | translate }}">
+			<juci-config-line ng-show="brcm.jbenable.value" title="{{ 'Jitter Buffer Implementation' | translate }}">
 				<juci-select ng-items="jbimpl" ng-model="brcm.jbimpl.value"></juci-select>
 			</juci-config-line>
-			<juci-config-line ng-show="brcm.jbenable.value" title="{{ 'Maximum Jitter Buffer size [ms]' | translate }}">
+			<juci-config-line ng-show="brcm.jbenable.value" title="{{ 'Maximum Jitter Buffer Size [ms]' | translate }}">
 				<input type="number" class="form-control" ng-model="brcm.jbmaxsize.value" />
 			</juci-config-line>
 			<juci-config-line title="{{ 'Enable Packet Loss Concealment' | translate }}">
 				<switch class="green" ng-model="brcm.genericplc.value" />
 			</juci-config-line>
-			<juci-config-line title="{{ 'Inter-digit timeout [ms]' | translate }}">
+			<juci-config-line title="{{ 'Inter-Digit Timeout [ms]' | translate }}">
 				<input type="number" class="form-control" ng-model="brcm.dialoutmsec.value" />
 			</juci-config-line>
 		</juci-config-lines>
