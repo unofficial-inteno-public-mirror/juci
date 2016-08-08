@@ -3,29 +3,17 @@
 		<h2>Realtime Graphs</h2>
 		<tabset>
 			<tab heading="{{'Load'|translate}}">
+				<juci-realtime-graph id="'load'" ng-model="load" tick="tick" min="0" max="2"></juci-realtime-graph>
 			</tab>
 			<tab heading="{{'Traffic'|translate}}">
-			<!--
 				<tabset>
 					<tab ng-repeat="(key,value) in bytes" heading="{{key}}">
-						<div id={{key}} moddel={{value}}></div>
-						<juci-realtime-graph ng-model="{{value}}" id={{key}} tick="tick"></juci-realtime-graph>
-					</tab>
-				</tabset>
-			-->
-				<tabset>
-					<tab heading="{{'br-lan'|translate}}">
-						<juci-realtime-graph id="'br-lan'" ng-model="bytes['br-lan']" tick="tick"></juci-realtime-graph>
-					</tab>
-					<tab heading="{{'eth2'|translate}}">
-						<juci-realtime-graph id="'eth2'" ng-model="bytes['eth2']" tick="tick"></juci-realtime-graph>
-					</tab>
-					<tab heading="{{'eth4'|translate}}">
-						<juci-realtime-graph id="'eth4'" ng-model="bytes['eth4']" tick="tick"></juci-realtime-graph>
+						<juci-realtime-graph ng-model="value" id="{{key}}" tick="tick"></juci-realtime-graph>
 					</tab>
 				</tabset>
 			</tab>
 			<tab heading="{{'Connections'|translate}}">
+				<juci-realtime-graph id="'connections'" ng-model="connections" tick="tick" min="0" max="40"></juci-realtime-graph>
 			</tab>
 		</tabset>
 	<div>
