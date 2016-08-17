@@ -7,7 +7,7 @@
 			</tab>
 			<tab heading="{{'Traffic'|translate}}">
 				<tabset>
-					<tab ng-repeat="(key,value) in bytes" heading="{{key}}">
+					<tab ng-repeat="(key,value) in traffic" heading="{{key}}">
 						<juci-realtime-graph ng-model="value" id="{{key}}" tick="tick"></juci-realtime-graph>
 					</tab>
 				</tabset>

@@ -1,43 +1,43 @@
 JUCI.app.controller("rtgraphsCtrl", function($scope, $uci){
 	$scope.load = {
-		"1 m" : 0,
-		"5 m" : 0,
-		"15 m" : 0
+		"1 min" : 0,
+		"5 min" : 0,
+		"15 min" : 0
 	};
 	$scope.connections = {
 		"udp_count" : 0,
 		"tcp_count" : 0
 	}
-	$scope.interfacesOLD = {};
-	$scope.interfacesNEW = {};
-	$scope.interfacesDIFF = {};
-	$scope.bytes = {
-		 "br-lan": { "rx":"0", "tx":"0"},
-		 "eth2": { "rx":"0", "tx":"0"},
-		 "eth4": { "rx":"0", "tx":"0"}
-	};
+	$scope.traffic = {};
 	$scope.tick = 1000;
 
-	$rpc.$call("router", "interfaces").done(function(data){
-		$scope.interfacesOLD = data;
-		$scope.interfacesNEW = data;
-	});
-
 	function updateInterfaces(){
-		$scope.interfacesOLD = $scope.interfacesNEW;
-		$rpc.$call("router", "interfaces").done(function(data){
-			$scope.interfacesNEW = data;
-			for(var key in data){
-				if($scope.bytes[key]){
-					$scope.bytes[key].tx = (parseInt($scope.interfacesNEW[key].tx) - parseInt($scope.interfacesOLD[key].tx)).toString();
-					$scope.bytes[key].rx = (parseInt($scope.interfacesNEW[key].rx) - parseInt($scope.interfacesOLD[key].rx)).toString();
-				}
-			}
+		$rpc.$call("router.network", "traffic").done(function(data){
+			$scope.traffic = data;
 		});
 		$scope.$apply();
 	}
 
 	function updateLoad(){
+		$rpc.$call("router.network", "load").done(function(data){
+			$scope.load = data.load;
+		});
+		$scope.$apply();
+	}
+
+	function updateConnections(){
+		$rpc.$call("router.network", "connections").done(function(data){
+			$scope.connections = data.connections;
+		});
+		$scope.$apply();
+	}
+
+	setInterval(updateInterfaces,$scope.tick);
+	setInterval(updateLoad,$scope.tick);
+	setInterval(updateConnections,$scope.tick);
+
+
+	function updateLoadOLD(){
 		function bitshift16(nr){ return nr/65535; }
 
 		$rpc.$call("system", "info").done(function(data){
@@ -50,21 +50,5 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci){
 		});
 		$scope.$apply();
 	}
-
-	function updateConnections(){
-		$rpc.$call("router", "info").done(function(data){
-			$scope.connections = {
-				"UDP" : data.system.udp_count,
-				"TCP" : data.system.tcp_count
-			};
-		});
-		$scope.$apply();
-	}
-
-	setInterval(updateInterfaces,$scope.tick);
-	setInterval(updateLoad,$scope.tick);
-	setInterval(updateConnections,$scope.tick);
-
-
 
 });
