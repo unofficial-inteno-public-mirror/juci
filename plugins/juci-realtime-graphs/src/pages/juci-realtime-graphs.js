@@ -36,19 +36,4 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci){
 	setInterval(updateLoad,$scope.tick);
 	setInterval(updateConnections,$scope.tick);
 
-
-	function updateLoadOLD(){
-		function bitshift16(nr){ return nr/65535; }
-
-		$rpc.$call("system", "info").done(function(data){
-			load = data.load.map(bitshift16);
-			$scope.load = {
-				"1 m" : load[0],
-				"5 m" : load[1],
-				"15 m": load[2]
-			};
-		});
-		$scope.$apply();
-	}
-
 });
