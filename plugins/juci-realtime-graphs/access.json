@@ -3,8 +3,10 @@
 		"description": "JUCI Realtime Graphs Module",
 		"read": {
 			"ubus": {
-				"router": [
-					"interfaces"
+				"router.network": [
+					"traffic",
+					"load",
+					"connections"
 				],
 				"system": [
 					"info"
