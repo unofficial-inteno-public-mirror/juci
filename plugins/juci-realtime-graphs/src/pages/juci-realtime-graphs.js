@@ -2,17 +2,16 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 	var mapIface = {};
 	$uci.$sync("ports").done(function(){
 		$scope.portnames = $uci.ports["@all"];
-		$scope.$apply();
 		for (var i in $scope.portnames){
 			if (typeof $scope.portnames[i] === 'function') { continue; }
 			var key = $scope.portnames[i].ifname.value;
 			var val = $scope.portnames[i][".name"];
 			mapIface[key] = val;
 		}
+		$scope.$apply();
 	});
 	$uci.$sync("wireless").done(function(){
 		$scope.wifaces = $uci.wireless["@wifi-iface"];
-		$scope.$apply();
 		for (var i in $scope.wifaces){
 			if (!$scope.wifaces[i].ifname) { continue; }
 			var key = $scope.wifaces[i].ifname.value;
@@ -27,6 +26,7 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 				var freq = data[i][".frequency"];
 				mapIface[wdevice] = mapIface[wdevice] + " " + freq;
 			}
+			$scope.$apply();
 		});
 	});
 	$scope.load = {
@@ -57,22 +57,22 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 				traffic[newKey] = data[key];
 			}
 			$scope.traffic = traffic;
-		});
-		$scope.$apply();
+			$scope.$apply();
+		}).fail(function(e){console.log(e);});
 	}
 
 	function updateLoad(){
 		$rpc.$call("router.network", "load").done(function(data){
 			$scope.load = data.load;
-		});
-		$scope.$apply();
+			$scope.$apply();
+		}).fail(function(e){console.log(e);});
 	}
 
 	function updateConnections(){
 		$rpc.$call("router.network", "connections").done(function(data){
 			$scope.connections = data.connections;
-		});
-		$scope.$apply();
+			$scope.$apply();
+		}).fail(function(e){console.log(e);});
 	}
 
 	//TODO: STOP "THREADS" BEFORE STARTING NEW ONES
