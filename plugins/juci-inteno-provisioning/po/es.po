@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Hourly"
 msgstr "Tunneittain"
@@ -19,9 +19,6 @@ msgstr "Päivittäin"
 
 msgid "Weekly"
 msgstr "Viikottain"
-
-msgid "Add password protection"
-msgstr "Lisää salasanasuojaus"
 
 msgid "Backup Password:"
 msgstr "Varmuuskopion salasana:"
@@ -91,3 +88,6 @@ msgstr ""
 
 msgid "menu-settings-provisioning-iup-title"
 msgstr "IUP provisiointi"
+
+#~ msgid "Add password protection"
+#~ msgstr "Lisää salasanasuojaus"

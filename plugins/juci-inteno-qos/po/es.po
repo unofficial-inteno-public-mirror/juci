@@ -9,13 +9,34 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Low"
 msgstr ""
 
-msgid "Add Bandwidth Limitation"
-msgstr "Lisää kaistanrajoitussääntö"
+#, fuzzy
+msgid "Enabled"
+msgstr "Ota käyttöön"
+
+#, fuzzy
+msgid "Download Speed"
+msgstr "Latausnopeuden rajoitus"
+
+#, fuzzy
+msgid "Upload Speed"
+msgstr "Lähetysnopeuden rajoitus"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/pages/juci-inteno-qos.js
+msgid "New Class"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/pages/juci-inteno-qos.js
+msgid "New Classgroup"
+msgstr ""
+
+#, fuzzy
+msgid "New Interface"
+msgstr "Liitäntä"
 
 msgid "All"
 msgstr "Kaikki"
@@ -29,44 +50,73 @@ msgstr ""
 msgid "ICMP"
 msgstr ""
 
-msgid "Select which interface you want to put the Bandwidth Limitation on"
-msgstr "Valitse käytettävä yhteys"
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.js
+msgid "End value has to be larger than start value."
+msgstr ""
 
-msgid "Interface"
+#, fuzzy
+msgid "Interface name"
 msgstr "Liitäntä"
 
-msgid "Interface to apply the restrictions on"
-msgstr " Liitäntä johon määrityksiä käytetään"
-
-msgid "Enable"
-msgstr "Ota käyttöön"
-
-msgid "Download Speed Limit"
-msgstr "Latausnopeuden rajoitus"
-
-msgid "Upload Speed Limit"
-msgstr "Lähetysnopeuden rajoitus"
-
-msgid "Acceleration will be disabled when Bandwidth limitation is enabled"
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/new-classgroup-modal.html
+msgid "Classgroup name"
 msgstr ""
-"Laitteistokiihdytys poistetaan käytöstä, kun kaistanrajoitus on käytössä"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/new-class-modal.html
+msgid "Class name"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+msgid "Priority"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+msgid "Average Rate"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+msgid "Limit Rate"
+msgstr ""
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "Packet Size"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+msgid "Packet Delay"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classes-edit.html
+msgid "Max Size"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classgroups-edit.html
+msgid "Classes"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classgroups-edit.html
+msgid "Add a new class"
+msgstr ""
 
 msgid "Target"
-msgstr "Kohde"
-
-msgid "Precedence"
-msgstr "Presedenssi"
-
-msgid "Source host"
-msgstr "Lähde"
-
-msgid "Destination host"
 msgstr "Kohde"
 
 msgid "Protocol"
 msgstr "Protokolla"
 
-msgid "Port"
+#, fuzzy
+msgid "Source Host"
+msgstr "Lähde"
+
+#, fuzzy
+msgid "Destination Host"
+msgstr "Kohde"
+
+#, fuzzy
+msgid "Ports"
 msgstr "Portti"
 
 msgid "Filter by port, when there are no ports no filter will be applied"
@@ -74,11 +124,99 @@ msgstr ""
 "Porttikohtainen suodatus. Kun portteja ei ole määritelty, suodatinsääntöjä "
 "ei sovelleta"
 
-msgid "Bandwidth Limitation"
-msgstr "Internet-yhteyden rajoitus"
+#, fuzzy
+msgid "Source Ports"
+msgstr "Lähde"
 
-msgid "Quality of Service Settings"
-msgstr "QoS säännöt"
+#, fuzzy
+msgid "Destination Ports"
+msgstr "Kohde"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "Port Range"
+msgstr ""
+
+msgid "Precedence"
+msgstr "Presedenssi"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "Direction"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "Mark"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "Connbytes"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "TCP Flags"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "tos"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-classify-edit.html
+msgid "dscp"
+msgstr ""
+
+#, fuzzy
+msgid "Enable QoS"
+msgstr "Ota käyttöön"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-iface-edit.html
+msgid "Classification Group"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/widgets/qos-iface-edit.html
+msgid "Calculate Overhead"
+msgstr ""
+
+#, fuzzy
+msgid "Limit Download Speed"
+msgstr "Latausnopeuden rajoitus"
+
+#, fuzzy
+msgid "Limit Upload Speed"
+msgstr "Lähetysnopeuden rajoitus"
+
+#, fuzzy
+msgid "Acceleration will be disabled when QoS is enabled"
+msgstr ""
+"Laitteistokiihdytys poistetaan käytöstä, kun kaistanrajoitus on käytössä"
+
+msgid "Interface"
+msgstr "Liitäntä"
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/pages/juci-inteno-qos.html
+msgid "Class"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/pages/juci-inteno-qos.html
+msgid "Classgroup"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-qos/src/pages/juci-inteno-qos.html
+msgid "Classify"
+msgstr ""
 
 msgid "menu-juci-inteno-qos-title"
 msgstr "QoS"
+
+#~ msgid "Add Bandwidth Limitation"
+#~ msgstr "Lisää kaistanrajoitussääntö"
+
+#~ msgid "Select which interface you want to put the Bandwidth Limitation on"
+#~ msgstr "Valitse käytettävä yhteys"
+
+#~ msgid "Interface to apply the restrictions on"
+#~ msgstr " Liitäntä johon määrityksiä käytetään"
+
+#~ msgid "Bandwidth Limitation"
+#~ msgstr "Internet-yhteyden rajoitus"
+
+#~ msgid "Quality of Service Settings"
+#~ msgstr "QoS säännöt"

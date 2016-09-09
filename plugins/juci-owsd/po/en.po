@@ -58,7 +58,6 @@ msgstr ""
 msgid "menu-settings-management-owsd-title"
 msgstr "OWSD"
 
-
 #~ msgid "settings.network.info"
 #~ msgstr ""
 #~ "This page allows to configure IP addresses used in your home network. In "

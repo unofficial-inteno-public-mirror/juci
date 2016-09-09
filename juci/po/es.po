@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "OK"
 msgstr "OK"
@@ -47,14 +47,12 @@ msgstr "Yhteys epäonnistui"
 msgid "RPC error #"
 msgstr "RPC virhe #"
 
-msgid "You have been logged out due to inactivity"
-msgstr "Sinut on kirjattu ulos"
+#, fuzzy
+msgid "please enter time in form hh:mm"
+msgstr "kirjoita kelvollinen aika muodossa tt: mm"
 
 msgid "please specify both hour and minute value for time separated by ':'"
 msgstr "määritä sekä tunnit, että minuutit eroteltuna ':'"
-
-msgid "please enter valid time in form hh:mm"
-msgstr "kirjoita kelvollinen aika muodossa tt: mm"
 
 msgid "Please specify both start time and end time for schedule!"
 msgstr "Määritä sekä alkamisaika, että päättymisaika aikatauluun!"
@@ -65,18 +63,64 @@ msgstr "Aloitusaika täytyy olla pienempi kuin päättymisaika!"
 msgid "Please pick days between mon-sun"
 msgstr "Valitse päivä ma-su väliltä"
 
+#, fuzzy
+msgid "Port has to be a number between 1 and 65535. Use '"
+msgstr "Portti väliltä 1-65535"
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "' to define a range."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"A port is between 1 and 65535 and start port must be lower than stop port"
+"Ports has to be between 1 and 65535 and start port must be lower than end "
+"port"
 msgstr ""
 "Portti väliltä 1-65535 ja alkuportin on oltava pienempi kuin loppuportti"
 
-msgid "A port is between 1 and 65535"
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "Port range has to be on the form number"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "number"
+msgstr ""
+
+#, fuzzy
+msgid "Port has to be a number between 1 and 65535"
 msgstr "Portti väliltä 1-65535"
 
-msgid ""
-"A port can only be a number between 1 and 65535 or a range on the form "
-"number-number"
-msgstr "Portti voi olla vain väliltä 1-65535 ja sen on oltava numeerinen"
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "WEP encryption key must be 10-26 hexadecimal characters!"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "WPA encryption key must be 8-63 printable ASCII characters!"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "WPA encryption key cannot contain the following characters:"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "Only printable ASCII characters allowed."
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "Invalid mark format: it must be between (!)0x0000 - (!)0xFFFF"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "End value has to be larger than start value."
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "Size has to be larger than 0."
+msgstr ""
+
+#, fuzzy
+msgid "Invalid range."
+msgstr "Virheellinen komento"
 
 msgid "Number value is not within valid range"
 msgstr "Numeroarvo ei ole sallittujen rajojen sisällä"
@@ -108,13 +152,22 @@ msgstr "Osoitteen tulee olla kelvollinen IPv6 osoite"
 msgid "Address must be a valid IPv6 CIDR Validator (IPv6-address/Mask)"
 msgstr "Osoitteen on oltava kelvollinen IPv6-osoite/peite"
 
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "IPv6 Prefix Hint must be a hexadecimal number between 1-FFFF"
+msgstr ""
+
 msgid "Value must be a valid MAC-48 address"
 msgstr "Arvon on oltava oikea MAC-48 osoite"
 
 msgid "value must be a valid MAC-48 address"
 msgstr "arvon on oltava kelvollinen MAC-48-osoite"
 
-msgid "application.name"
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "Field is required"
+msgstr ""
+
+# /home/reidar/juci/juci//src/js/uci.js
+msgid "is required"
 msgstr ""
 
 msgid ""
@@ -122,6 +175,12 @@ msgid ""
 msgstr ""
 "Tallentamattomia asetuksia. Haluatko tallentaa asetukset ennen kuin siirryt "
 "tältä sivulta?"
+
+# /home/reidar/juci/juci//src/factories/files.js
+msgid ""
+"your browser does not support this kind of download, please refer to latest "
+"Chrome, Firefox, Opera or Edge etc."
+msgstr ""
 
 msgid "Unapplied Changes"
 msgstr "Tallentamattomia asetuksia"
@@ -208,6 +267,17 @@ msgstr "Vanha arvo"
 msgid "New value"
 msgstr "Uusi arvo"
 
+# /home/reidar/juci/juci//src/widgets/juci-footer.html
+msgid "No WAN IP"
+msgstr ""
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/juci//src/widgets/juci-footer.html
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/juci//src/widgets/juci-navbar.html
+msgid "Logout"
+msgstr ""
+
 msgid "Start port"
 msgstr "Aloitusportti"
 
@@ -217,11 +287,13 @@ msgstr "Viimeinen portti"
 msgid "Port (1-65535)"
 msgstr "Portti (1-65535)"
 
-msgid "from"
-msgstr "alkaen"
+# /home/reidar/juci/juci//src/widgets/juci-list-editor.html
+msgid "Edit"
+msgstr ""
 
-msgid "to"
-msgstr "asti"
+# /home/reidar/juci/juci//src/widgets/juci-list-editor.html
+msgid "Hide Editor"
+msgstr ""
 
 msgid "Add"
 msgstr "Lisää"
@@ -265,8 +337,20 @@ msgstr "Vaihda perusasetuksien ja edistyneiden asetuksien välillä"
 msgid "Select Mode"
 msgstr "Valitse tila"
 
+# /home/reidar/juci/juci//src/widgets/juci-navbar.html
+msgid "You have "
+msgstr ""
+
+# /home/reidar/juci/juci//src/widgets/juci-navbar.html
+msgid " new events"
+msgstr ""
+
 msgid "Toggle navigation"
 msgstr "Vaihda navigaatiota"
+
+# /home/reidar/juci/juci//src/widgets/juci-navbar.html
+msgid "No new events to show"
+msgstr ""
 
 msgid "Time Frame"
 msgstr "Aikakehys"
@@ -280,19 +364,27 @@ msgstr "Päivät"
 msgid "Time"
 msgstr "Aika"
 
+msgid "from"
+msgstr "alkaen"
+
+msgid "to"
+msgstr "asti"
+
 msgid "Select Theme"
 msgstr "Valitse teema"
 
 msgid "The page you were trying to access was not found!"
 msgstr "Virhe404 - Sivu, jota yrität katsoa, ei löytynyt."
 
-msgid "menu-404-title"
-msgstr "404"
-
-msgid "menu-bootstrap-title"
-msgstr "JUCI"
+# /home/reidar/juci/juci//src/pages/status-about.html
+msgid "About"
+msgstr ""
 
 msgid "menu-default-title"
+msgstr "Default"
+
+#, fuzzy
+msgid "menu-status-about-title"
 msgstr "Default"
 
 msgid "menu-login-title"
@@ -300,3 +392,17 @@ msgstr "Kirjaudu sisään"
 
 msgid "menu-overview-title"
 msgstr "Yleisnäkymä"
+
+msgid "menu-404-title"
+msgstr "404"
+
+msgid "menu-bootstrap-title"
+msgstr "JUCI"
+
+#~ msgid "You have been logged out due to inactivity"
+#~ msgstr "Sinut on kirjattu ulos"
+
+#~ msgid ""
+#~ "A port can only be a number between 1 and 65535 or a range on the form "
+#~ "number-number"
+#~ msgstr "Portti voi olla vain väliltä 1-65535 ja sen on oltava numeerinen"

@@ -25,10 +25,44 @@ msgid ""
 "different name!"
 msgstr ""
 
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-rules.js
+msgid "Source IP"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-rules.js
+msgid "Destination IP"
+msgstr ""
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-rules.js
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/uci.firewall.nat.rule.edit.html
+msgid "Source Port(s)"
+msgstr ""
+
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-rules.js
+# #-#-#-#-#  template.pot  #-#-#-#-#
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/uci.firewall.nat.rule.edit.html
+msgid "Destination Port(s)"
+msgstr ""
+
 msgid "Please select a rule to delete!"
 msgstr ""
 
 msgid "Are you sure you want to delete this rule?"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-zones.js
+msgid "Input Policy"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-zones.js
+msgid "Output Policy"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-zones.js
+msgid "Forward Policy"
 msgstr ""
 
 msgid "Please select a zone to delete!"
@@ -38,6 +72,18 @@ msgid "Are you sure you want to delete this zone?"
 msgstr ""
 
 msgid "Parental Rule"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-parental-control.js
+msgid "No day selected!"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-parental-control.js
+msgid "No target host selected!"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-parental-control.js
+msgid "No start and/or end time selected!"
 msgstr ""
 
 msgid "TCP + UDP"
@@ -58,13 +104,12 @@ msgstr ""
 msgid "Port mapping rule needs a name"
 msgstr ""
 
-msgid "Rule has invalid Private port"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.js
+msgid "Fixe Errors before saving"
 msgstr ""
 
-msgid "Rule has invalid Public port"
-msgstr ""
-
-msgid "Rule can not have empty Private port"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.js
+msgid "Rule can not have empty Public port"
 msgstr ""
 
 msgid "ACCEPT"
@@ -85,6 +130,10 @@ msgstr ""
 msgid "Any"
 msgstr ""
 
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-rule-edit.js
+msgid "IP must be ether a valid IPv4 or a valid IPv6 Address"
+msgstr ""
+
 msgid "Firewall Zones can't have the same name"
 msgstr ""
 
@@ -94,10 +143,12 @@ msgstr ""
 msgid "Are you sure you want to remove this network from this zone?"
 msgstr ""
 
-msgid "Configure Port Mapping"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.html
+msgid "Configure Port Forwarding"
 msgstr ""
 
-msgid "Edit Port Mappings for"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.html
+msgid "Edit port forwardings for"
 msgstr ""
 
 msgid "Name"
@@ -109,11 +160,12 @@ msgstr ""
 msgid "These ports may not be mapped they are protected"
 msgstr ""
 
-msgid "Public port"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.html
+msgid "Public port(s)"
 msgstr ""
 
-msgid ""
-"Ports can be a space separeated list or on the form <range-start>-<range-end>"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.html
+msgid "A port number or a range on the form startport:endport"
 msgstr ""
 
 msgid "Private port"
@@ -122,7 +174,11 @@ msgstr ""
 msgid "Protocol"
 msgstr ""
 
-msgid "Current Port mappings"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/firewall-client-port-mapping.html
+msgid "Current Port Forwardings"
+msgstr ""
+
+msgid "Public port"
 msgstr ""
 
 msgid "Cancel"
@@ -138,6 +194,9 @@ msgid "Select Existing Host"
 msgstr ""
 
 msgid "Invalid MAC address"
+msgstr ""
+
+msgid "Enable"
 msgstr ""
 
 msgid "Zone"
@@ -224,10 +283,8 @@ msgstr ""
 msgid "Dst. IP Address"
 msgstr ""
 
-msgid "Public Port(s)"
-msgstr ""
-
-msgid "Private Port(s)"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/widgets/uci.firewall.nat.rule.edit.html
+msgid "NAT Loopback"
 msgstr ""
 
 msgid "Select protocol"
@@ -254,9 +311,6 @@ msgstr ""
 "properly behind the firewall, you can allow unrestricted Internet access to "
 "the network device (Exposed Host)."
 
-msgid "Enable"
-msgstr ""
-
 msgid "WAN IP Address"
 msgstr ""
 
@@ -267,9 +321,6 @@ msgid "Host IPv6 Address"
 msgstr ""
 
 msgid "IPv6 Address"
-msgstr ""
-
-msgid "Select Existing Host"
 msgstr ""
 
 msgid ""
@@ -294,9 +345,6 @@ msgstr "Configure port forwarding here."
 msgid "Enable firewall"
 msgstr ""
 
-msgid "Enable NAT"
-msgstr ""
-
 msgid "Firewall settings"
 msgstr ""
 
@@ -308,21 +356,30 @@ msgstr ""
 msgid "to"
 msgstr ""
 
-msgid "Add / Edit Port Mapping"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-port-mapping.html
+msgid "Add / Edit Port Forwarding"
 msgstr ""
 
-msgid "Port Mapping"
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-port-mapping.html
+msgid "Port Forwarding"
 msgstr ""
 
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-firewall-port-mapping.html
 msgid ""
-"Port mapping allows remote computers to connect to a specific device within "
-"your private network."
+"Port forwarding allows remote computers to connect to a specific device "
+"within your private network."
 msgstr ""
 
 msgid "Direction"
 msgstr ""
 
 msgid "Dst. IP"
+msgstr ""
+
+msgid "Public Port(s)"
+msgstr ""
+
+msgid "Private Port(s)"
 msgstr ""
 
 msgid "Firewall Rules"
@@ -360,6 +417,11 @@ msgstr ""
 "networks, or interfaces, which you have set up earlier. "
 
 msgid "URL Blocking"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-firewall-fw3/src/pages/internet-parental-control.html
+msgid ""
+"Select when Internet access will be restricted to the specified client(s)"
 msgstr ""
 
 msgid "Parental Control"
@@ -412,4 +474,3 @@ msgstr "Rules"
 
 msgid "menu-internet-firewall-urlblock-title"
 msgstr "URL Blocking"
-

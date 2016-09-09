@@ -189,6 +189,10 @@ msgstr ""
 msgid "Save Configuration to Computer"
 msgstr ""
 
+# /home/reidar/juci/plugins/juci-mod-system/src/pages/settings-configuration.html
+msgid "Password protection"
+msgstr ""
+
 msgid "Comments"
 msgstr ""
 
@@ -365,7 +369,7 @@ msgid "Server mode"
 msgstr ""
 
 # /home/reidar/juci/plugins/juci-mod-system/src/pages/settings-system-timeservers.html
-msgid "Timeservers Settings"
+msgid "Time Servers"
 msgstr ""
 
 msgid "Loading"

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Standard Container"
 msgstr "Juurikansio"
@@ -53,7 +53,8 @@ msgstr "Valitse kansio"
 msgid "Enable"
 msgstr "Ota käyttöön"
 
-msgid "General Settings"
+#, fuzzy
+msgid "General"
 msgstr "MiniDLNA Asetukset"
 
 msgid "Port"
@@ -90,7 +91,8 @@ msgstr "Tämä on tiedostonimilista jonka mukaan etsitään kansiokuvia"
 msgid "write list of album-art names"
 msgstr "Albumin Kansikuvanimet"
 
-msgid "Advanced settings"
+#, fuzzy
+msgid "Advanced"
 msgstr "Lisäasetukset"
 
 msgid "Database directory"
