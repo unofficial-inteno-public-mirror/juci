@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Allow"
 msgstr "Salli"
@@ -117,7 +117,8 @@ msgid "UPnP ACLs"
 msgstr ""
 
 msgid "UPnP Open Ports"
-msgstr "Käyttää UPnP:tä avaamaan automaattisesti tarvittavat portit reititimestäsi"
+msgstr ""
+"Käyttää UPnP:tä avaamaan automaattisesti tarvittavat portit reititimestäsi"
 
 msgid "No UPnP ports currently in use"
 msgstr "Ei käytössä olevia UPnP-porttteja"
@@ -170,8 +171,8 @@ msgstr "Packets cnt."
 msgid "Proto"
 msgstr "Proto"
 
-msgid "menu-upnpd-status-title"
-msgstr "PuhelinUPNP"
-
 msgid "menu-upnpd-settings-title"
 msgstr "UPNP"
+
+msgid "menu-upnpd-status-title"
+msgstr "PuhelinUPNP"

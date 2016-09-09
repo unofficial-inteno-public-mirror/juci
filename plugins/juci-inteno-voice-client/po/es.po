@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "SIP users needs a name"
 msgstr ""
@@ -25,6 +25,14 @@ msgstr "Käytössä"
 
 msgid "Disabled"
 msgstr "Pois käytöstä"
+
+#, fuzzy
+msgid "No Phone number selected"
+msgstr "Puhelinnumerosi"
+
+# /home/reidar/juci/plugins/juci-inteno-voice-client/src/pages/voice-ringing-schedule.js
+msgid "No Day selected"
+msgstr ""
 
 msgid "Fixed"
 msgstr ""
@@ -210,6 +218,20 @@ msgid "TCP"
 msgstr ""
 
 msgid "TLS"
+msgstr ""
+
+msgid "Username"
+msgstr "Käyttäjä"
+
+msgid "Domain"
+msgstr "Toimialue"
+
+# /home/reidar/juci/plugins/juci-inteno-voice-client/src/widgets/sip-service-provider.js
+msgid "Registration Time"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-inteno-voice-client/src/widgets/sip-service-provider.js
+msgid "Binding Address"
 msgstr ""
 
 msgid "Account "
@@ -613,9 +635,6 @@ msgstr "Alanumero"
 msgid "Extension for this user"
 msgstr ""
 
-msgid "Username"
-msgstr "Käyttäjä"
-
 msgid "The User id for the account (defaultuser)"
 msgstr ""
 
@@ -657,9 +676,6 @@ msgstr "Puhelinlinjojen tila."
 msgid "Your Phone Lines"
 msgstr "Puhelinlinjasi"
 
-msgid "Domain"
-msgstr "Toimialue"
-
 msgid "Registration interval (s)"
 msgstr ""
 
@@ -699,9 +715,6 @@ msgstr "Aika"
 msgid "External Number"
 msgstr "Ulkoinen numero"
 
-msgid "Your number"
-msgstr "Puhelinnumerosi"
-
 msgid "Duration"
 msgstr "Kesto"
 
@@ -735,9 +748,10 @@ msgstr "Estä soitot näistä numeroista"
 msgid "Outgoing Calls"
 msgstr "Lähtevät puhelut"
 
+#, fuzzy
 msgid ""
-"You can also block ranges of numbers.For example: '0160#' blocks all numbers "
-"starting with '0160'."
+"You can also block ranges of numbers. For example: '0160#' blocks all "
+"numbers starting with '0160'."
 msgstr ""
 "Voit myös estää numeroalueen. Esimerkiksi \"0160#\" estää kaikki numerot "
 "jotka ovat \"0160\"-alkuisia"
@@ -753,13 +767,15 @@ msgstr ""
 "Aseta puhelinaikataulut milloin puhelimen tulisi hälyttää tai ei tulisi "
 "hälyttää."
 
-msgid "During this time ringing is"
+#, fuzzy
+msgid "During the times below ringing is"
 msgstr "Tänä aika soittaminen on "
 
 msgid "Select Schedule Mode"
 msgstr "Valitse Aikataulutila"
 
-msgid "Add a new Ringing Schedule"
+#, fuzzy
+msgid "Add/Edit Ringing Schedule"
 msgstr "Lisää uusi soittoajastus"
 
 msgid "Phone Number"
@@ -770,9 +786,6 @@ msgstr "Valitse puhelinnumero"
 
 msgid "Day"
 msgstr "Päivä"
-
-msgid "Number"
-msgstr "Numero"
 
 msgid "Speed Dialing"
 msgstr "Pikavalinta"
@@ -786,29 +799,11 @@ msgstr "Poista kaikki merkinnät pikavalintaluettelosta"
 msgid "Clear"
 msgstr "Tyhjennä"
 
-msgid "menu-voice-sip-accounts-title"
-msgstr "Linjat"
-
-msgid "menu-voice-advanced-settings-lines-title"
-msgstr "Linjat"
-
-msgid "menu-voice-lines-title"
-msgstr "Linjat"
-
-msgid "menu-voice-advanced-settings-title"
-msgstr "Linjat"
-
-msgid "menu-voice-call-log-title"
-msgstr "Puheluloki"
+msgid "menu-voice-sip-users-title"
+msgstr "Numerot"
 
 msgid "menu-status-phone-title"
 msgstr "Puhelin"
-
-msgid "menu-voice-advanced-settings-sip-title"
-msgstr "Linjat"
-
-msgid "menu-voice-advanced-settings-dialplan-title"
-msgstr "Pikavalinta"
 
 msgid "menu-voice-title"
 msgstr "Puheluloki"
@@ -816,11 +811,35 @@ msgstr "Puheluloki"
 msgid "menu-voice-number-blocking-title"
 msgstr "Kontrolloi puhelinlaskuasi ja estä puhelut ei-haluttuihin numeroihin."
 
-msgid "menu-voice-ringing-schedule-title"
-msgstr "Ajastus"
+msgid "menu-voice-advanced-settings-dialplan-title"
+msgstr "Pikavalinta"
+
+msgid "menu-voice-advanced-settings-sip-title"
+msgstr "Linjat"
+
+msgid "menu-voice-call-log-title"
+msgstr "Puheluloki"
+
+msgid "menu-voice-advanced-settings-lines-title"
+msgstr "Linjat"
+
+msgid "menu-voice-sip-accounts-title"
+msgstr "Linjat"
+
+msgid "menu-voice-lines-title"
+msgstr "Linjat"
 
 msgid "menu-voice-speed-dialing-title"
 msgstr "Pikavalinta"
 
-msgid "menu-voice-sip-users-title"
-msgstr "Numerot"
+msgid "menu-voice-ringing-schedule-title"
+msgstr "Ajastus"
+
+msgid "menu-voice-advanced-settings-title"
+msgstr "Linjat"
+
+#~ msgid "Your number"
+#~ msgstr "Puhelinnumerosi"
+
+#~ msgid "Number"
+#~ msgstr "Numero"
