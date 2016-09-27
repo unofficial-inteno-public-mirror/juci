@@ -78,7 +78,7 @@ JUCI.app.config(function ($stateProvider, $locationProvider, $compileProvider, $
 	
 	// TODO: maybe use some other way to gather errors than root scope? 
 	$rootScope.errors = []; 
-	
+
 	// register a global error handler so we can show all errors
 	window.onerror = function(err){
 		$rootScope.errors.push({ message: err+":\n\n"+(err.stack||"") });
