@@ -35,20 +35,14 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 		"15 min" : 0
 	};
 	$scope.connections = {
-		"udp_count" : 0,
-		"tcp_count" : 0
+		"UDP Count" : 0,
+		"TCP Count" : 0
 	};
 	$scope.traffic = {};
-	$scope.tick = 1000;
+	$scope.tick = 2000;
 
-	//function updateInterfaces(){
-	//	$rpc.$call("router.network", "traffic").done(function(data){
-	//		$scope.traffic = data;
-	//	});
-	//	$scope.$apply();
-	//}
-	function updateInterfaces(){
-		$rpc.$call("router.network", "traffic").done(function(data){
+	function updateTraffic(){
+		$rpc.$call("router.net", "traffic").done(function(data){
 			var traffic = {};
 			var newKey = undefined;
 			for (var key in data) {
@@ -57,27 +51,27 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 				traffic[newKey] = data[key];
 			}
 			$scope.traffic = traffic;
+			console.log(traffic);
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
 
 	function updateLoad(){
-		$rpc.$call("router.network", "load").done(function(data){
+		$rpc.$call("router.net", "load").done(function(data){
 			$scope.load = data.load;
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
 
 	function updateConnections(){
-		$rpc.$call("router.network", "connections").done(function(data){
+		$rpc.$call("router.net", "connections").done(function(data){
 			$scope.connections = data.connections;
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
 
-	//TODO: STOP "THREADS" BEFORE STARTING NEW ONES
-	JUCI.interval.repeat("updateInterfaces",$scope.tick,function(next){
-		updateInterfaces();
+	JUCI.interval.repeat("updateTraffic",$scope.tick,function(next){
+		updateTraffic();
 		next();
 	});
 	JUCI.interval.repeat("updateLoad",$scope.tick,function(next){
@@ -88,8 +82,4 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 		updateConnections();
 		next();
 	});
-	//setInterval(updateInterfaces,$scope.tick);
-	//setInterval(updateLoad,$scope.tick);
-	//setInterval(updateConnections,$scope.tick);
-
 });
