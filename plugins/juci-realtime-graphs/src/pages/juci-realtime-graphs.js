@@ -1,5 +1,12 @@
 JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 	var mapIface = {};
+	/*
+	$scope.min_avg_max = {
+		load : { min:0, avg:0, max:0, tot:0 },
+		traffic : { min:0, avg:0, max:0, tot:0 },
+		connections : { min:0, avg:0, max:0, tot:0 }
+	};
+	*/
 	$uci.$sync("ports").done(function(){
 		$scope.portnames = $uci.ports["@all"];
 		for (var i in $scope.portnames){
