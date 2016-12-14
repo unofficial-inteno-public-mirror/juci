@@ -1,0 +1,44 @@
+@import "colors.less";
+
+.top-navbar {
+	color: #111 !important;
+	background-color: white;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px 1px 3px #bbb;
+	.navbar-nav {
+		& > li {
+			font-family: "helvetica";
+			font-size: 0.9em;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			& > a {
+				background-color: transparent;
+				padding-bottom: 8px !important;
+				padding-top: 8px !important;
+				color: #111 !important;
+			}
+		}
+		& > .open {
+			& > a:focus {
+				background-color: transparent;
+			}
+			
+			& > a, & > a:hover {
+				background-color: white;
+				border-top: 2px solid @theme-detail-color;
+				color: #e62f39 !important;
+				@media screen and (max-width: 968px) {
+					background-color: #ddd;
+				}
+			}
+		}
+			margin-top: 40px;
+			margin-left: 30px;
+	}
+	.navbar-toggle {
+		background-color: #ddd;
+	}
+}
