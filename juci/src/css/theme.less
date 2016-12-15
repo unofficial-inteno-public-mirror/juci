@@ -1,14 +1,5 @@
 @import "colors.less";
 
-.gradient (@startColor: #eee, @endColor: white) {
-	background-color: @startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-	background: -webkit-linear-gradient(top, @startColor, @endColor);
-	background: -moz-linear-gradient(top, @startColor, @endColor);
-	background: -ms-linear-gradient(top, @startColor, @endColor);
-	background: -o-linear-gradient(top, @startColor, @endColor);
-}
-
 .drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
 	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
 	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
@@ -40,12 +31,6 @@
 	border-color: lighten(@theme-primary-color, 10%);
 }
 
-.juci-nav {
-	a {
-		color: #444;
-	}
-}
-
 .juci-container {
 	min-height: 1000px;
 	.juci-sidebar {
@@ -61,18 +46,6 @@
 	}
 }
 
-.juci-footer {
-	.gradient(@theme-footer-base-color, darken(@theme-footer-base-color, 10%));
-	color: white !important;
-	width: 100%;
-	min-height: 200px;
-	a {
-		color: white !important;
-	}
-	.about {
-		margin-top: 50px;
-	}
-}
 .juci-config-line-data {
 	@control-width: 200px;
 	div:not(.input-group) {

@@ -1,0 +1,84 @@
+@import "colors.less";
+
+.juci-navbar-left {
+	a {
+		color: #444;
+	}
+}
+
+ul.juci-navbar-left {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 20px 0 -10px;
+}
+
+//TODO: REMOVE nav-tabs - not used anywhere(?)
+.nav-tabs &>li.active &>a, .nav-tabs &>li.active &>a:focus, .nav-tabs &>li.active &>a:hover {
+	background-color: @theme-primary-color;
+	border-color: @theme-primary-color !important;
+	color: white !important;
+	font-weight: bold;
+}
+ul.juci-navbar-left li a.open, .nav-tabs &>li &>a {
+	color: @theme-heading-color !important;
+	border-color: @theme-footer-base-color !important;
+}
+
+ul.juci-navbar-left li {
+	padding: 0;
+	margin: 0;
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-family: Arial,sans-serif;
+	font-size: 16px;
+	outline: 0 none;
+	vertical-align: middle;
+}
+
+ul.juci-navbar-left a {
+	margin: 0;
+	display: block;
+	border-bottom: 1px solid #ccc;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	text-decoration: none;
+	font-size: 100%;
+	white-space: nowrap; 
+}
+
+ul.juci-navbar-left a.collapsed {
+    border-bottom: none;
+}
+
+ul.juci-navbar-left a:hover,
+ul.juci-navbar-left a:visited,
+ul.juci-navbar-left a:active{
+	text-decoration: none;
+	cursor: pointer;
+	color: #444;
+}
+
+ul.juci-navbar-left li a.open {
+	color: #e60000;
+	font-weight: bold;
+}
+
+ul.left-sub-menu {
+	list-style-type: none;
+	padding: 0;
+	margin: -10px 0 10px 20px;
+}
+
+ul.left-sub-menu li {
+	padding: 0;
+	margin: 0;
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-family: Arial,sans-serif;
+	font-size: 16px;
+	outline: 0 none;
+	vertical-align: middle;
+}
+
+
