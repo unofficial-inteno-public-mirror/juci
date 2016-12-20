@@ -1,13 +1,10 @@
 @import "colors.less";
 
 .juci-footer {
-	.gradient(@theme-footer-base-color, darken(@theme-footer-base-color, 10%));
-	color: white !important;
+	.gradient(darken(@theme-footer-base-color, 13%), @theme-footer-base-color);
 	width: 100%;
 	min-height: 200px;
-	a {
-		color: white !important;
-	}
+	margin-bottom: 0px !important;
 	.about {
 		margin-top: 50px;
 	}
@@ -15,11 +12,14 @@
 
 .gradient (@startColor: #eee, @endColor: white) {
 	background-color: @startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
-	background: -webkit-linear-gradient(top, @startColor, @endColor);
-	background: -moz-linear-gradient(top, @startColor, @endColor);
-	background: -ms-linear-gradient(top, @startColor, @endColor);
-	background: -o-linear-gradient(top, @startColor, @endColor);
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@startColor), color-stop(100%,@endColor), color-stop(100%,@endColor));
+	background: -webkit-linear-gradient(top, @startColor 0%,@endColor 100%, @endColor 100%);
+	background: -moz-linear-gradient(top, @startColor 0%, @endColor 100%, @endColor 100%);
+	background: -ms-linear-gradient(top, @startColor 0%,@endColor 100%, @endColor 100%);
+	background: -o-linear-gradient(top, @startColor 0%,@endColor 100%, @endColor 100%);
+	background: linear-gradient(to bottom, @startColor 0%,@endColor 100%, @endColor 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@startColor', endColorstr='@endColor',GradientType=0 );
 }
 
 .footer-right {
