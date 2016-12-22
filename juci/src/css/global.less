@@ -1,7 +1,11 @@
 @import "colors.less";
 
+* {
+	border-color: @theme-border !important;
+}
+
 .form-control:focus {
-	border-color: @theme-input-focus;
+	border-color: @theme-input-focus !important;
 	box-shadow: @theme-input-focus 0px 0px 5px 0px;
 }
 
