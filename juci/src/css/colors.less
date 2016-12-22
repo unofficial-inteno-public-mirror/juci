@@ -1,15 +1,17 @@
-@theme-background-color: white;
-@theme-border: #cccccc;
-@theme-border-light: mix(@theme-border, white, 70%);
-@theme-input-focus: #66AFE9;
+@theme-background-color: white;					//background color of overview, juci-layout-with-sidebar, juci-layout-naked
+@theme-border: #cccccc;						//border-color of all pages where it is not over written
+@theme-primary-color: #F1C100;					//background-color of primary-button, active-tab
+@theme-input-focus: #66AFE9; //@theme-primary-color;		//border-color of active input-field
+@theme-navbar-top-active: #E62F39; //@theme-primary-color;	//text- and border-color of the active tab in the top navbar
 
-@theme-tabs-border: @theme-border-light;
-@theme-hr-color: @theme-border !important;
+@theme-border-light: mix(@theme-border, white, 70%);
+@theme-tabs-border: @theme-border-light;			//border-color of the tab and its content
+@theme-tabs-active: @theme-primary-color;			//background-color of the active tab in a tabset
+@theme-hr-color: @theme-border !important;			//color (border-color) of a <hr> tag
+@theme-buttons-primary: @theme-primary-color;			//background-color of a btn-primary and its different variants
 
 @theme-success-color: #5cb85c;
-@theme-primary-color: #F1C100;
 @theme-heading-color: #66989C;
 @theme-link-color: #34485d;
-@theme-detail-color: #E62f39;
 @theme-error-color: #E62f39;
 @theme-footer-base-color: @theme-background-color;
