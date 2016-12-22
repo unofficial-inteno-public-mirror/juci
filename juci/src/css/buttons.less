@@ -10,3 +10,12 @@
 	border-color: lighten(@theme-buttons-primary, 10%);
 }
 
+.btn-success, .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open &>.dropdown-toggle.btn-success {
+	color: #FFF;
+	background-color: @theme-buttons-success;
+	border-color: @theme-buttons-success;
+}
+.btn-success.disabled, .btn-success.disabled.active, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled:focus, .btn-success.disabled:hover, .btn-success[disabled], .btn-success.active[disabled], .btn-success.focus[disabled], .btn-success[disabled]:active, .btn-success[disabled]:focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success.active, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:hover {
+	background-color: lighten(@theme-buttons-success, 10%);
+	border-color: lighten(@theme-buttons-success, 10%);
+}
