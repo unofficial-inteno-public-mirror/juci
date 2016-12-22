@@ -21,7 +21,7 @@
 JUCI.app
 .directive("juciConfigSection", function(){
 	return {
-		template: '<div><div class="juci-config-section" ng-transclude></div><hr style="width: 100%; border-bottom: 1px solid #ccc; clear: both;"/></div>', 
+		template: '<div><div class="juci-config-section" ng-transclude></div><hr class="theme-hr-color" style="width: 100%; clear: both;"/></div>', 
 		replace: true, 
 		transclude: true
 	 };  
@@ -58,7 +58,7 @@ JUCI.app
 				'<div class="{{pullClass}}" ng-transclude></div>'+
 			'</div></div>'+
 			'<div class="alert alert-danger" style="font-size: 0.8em" ng-show="er">{{er}}</div>'+
-			'<hr class="visible-xs" style="color:grey" />'+
+			'<hr class="visible-xs theme-hr-color" />'+
 			'</div>', 
 		replace: true, 
 		scope: {
