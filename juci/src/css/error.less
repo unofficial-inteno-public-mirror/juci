@@ -1,13 +1,22 @@
 @import "colors.less";
 
 .field-error {
-	border-left: 4px solid rgba(255, 0, 0, 0.6) !important;
+	border-left: 4px solid mix(@theme-error-text, white, 70%) !important;//#ff6666 !important; //rgba(255, 0, 0, 0.6) !important;
 }
 
-.label-danger{
-	background-color: @theme-error-color;
+.alert {
+	border: 1px solid transparent !important;
 }
-.text-danger{
-	color: @theme-error-color;
+
+.alert-danger {
+	color: @theme-error-text;
+	background-color: @theme-error-bg;
+}
+
+.label-danger {
+	background-color: @theme-error-bg;
+}
+.text-danger {
+	color: @theme-error-text;
 }
 

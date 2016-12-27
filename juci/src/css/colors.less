@@ -5,8 +5,9 @@
 @theme-success-color: #5cb85c;					//background-color of success-button, label-success
 @theme-input-focus: #66AFE9; //@theme-primary-color;		//border-color of active input-field
 @theme-navbar-top-active: #E62F39; //@theme-primary-color;	//text- and border-color of the active tab in the top navbar
-@theme-heading-color: #66989C;
-@theme-link-color: #34485d;
+@theme-heading-color: #66989C;					//text-color of headings
+@theme-error-text: #E62f39;					//text-color of error messages, also affects border to the left of faulty juci-config-lines
+@theme-link-color: #34485d;					//text-color of links
 
 
 @theme-navbar-left-border: @theme-border;			//border-color of non-active tabs in the left navbar
@@ -16,6 +17,5 @@
 @theme-hr-color: @theme-border !important;			//color (border-color) of a <hr> tag
 @theme-buttons-primary: @theme-primary-color;			//background-color of a btn-primary and its different variants
 @theme-buttons-success: @theme-success-color;			//background-color of a btn-success and its different variants
-@theme-footer-base-color: @theme-background-color;
-
-@theme-error-color: #E62f39;
+@theme-footer-base-color: @theme-background-color;		//base color of the gradient in the footer
+@theme-error-bg: mix(@theme-error-text, white, 12%);		//background-color of error divs
