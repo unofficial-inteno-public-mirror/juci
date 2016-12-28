@@ -2,7 +2,7 @@
 
 .juci-navbar-left {
 	a {
-		color: #444;
+		color: @theme-navbar-left-inactive;
 	}
 }
 
@@ -13,8 +13,8 @@ ul.juci-navbar-left {
 }
 
 ul.juci-navbar-left li a.open, .nav-tabs &>li &>a {
-	color: @theme-heading-color !important;
-	border-color: @theme-navbar-left-border-active !important;
+	color: @theme-navbar-left-active !important;
+	border-color: @theme-navbar-left-active-border !important;
 }
 
 ul.juci-navbar-left li {
@@ -49,7 +49,7 @@ ul.juci-navbar-left a:visited,
 ul.juci-navbar-left a:active{
 	text-decoration: none;
 	cursor: pointer;
-	color: #444;
+	color: @theme-navbar-left-inactive;
 }
 
 ul.juci-navbar-left li a.open {
