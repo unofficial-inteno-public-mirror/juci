@@ -57,7 +57,7 @@ JUCI.app
 			'<div class="col-sm-6 col-xs-12 juci-config-line-data">'+
 				'<div class="{{pullClass}}" ng-transclude></div>'+
 			'</div></div>'+
-			'<div class="alert alert-danger" style="font-size: 0.8em" ng-show="er">{{er}}</div>'+
+			'<div class="juci-error" style="font-size: 0.8em" ng-show="er">{{er}}</div>'+
 			'<hr class="visible-xs theme-hr-color" />'+
 			'</div>', 
 		replace: true, 
@@ -89,7 +89,7 @@ JUCI.app
 .directive("juciConfigApply", function(){
 	return {
 		template: '<div>'+
-			'<div class="alert alert-danger" ng-show="errors && errors.length"><ul><li ng-repeat="e in errors track by $index">{{e|translate}}</li></ul></div>'+
+			'<div class="juci-error" ng-show="errors && errors.length"><ul><li ng-repeat="e in errors track by $index">{{e|translate}}</li></ul></div>'+
 			'<div class="alert alert-success" ng-show="!errors.length && success">{{success}}</div>'+
 			'<div class="btn-toolbar" >'+
 			'<button class="btn btn-lg btn-default" ng-show="changes && changes.length && hasCapability" ng-click="showChanges()">{{"Unapplied Changes" | translate}} <span class="badge">{{numUnsavedChanges()}}</span></button>'+

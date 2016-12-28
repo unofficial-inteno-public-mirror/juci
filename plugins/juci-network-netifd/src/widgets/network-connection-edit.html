@@ -7,7 +7,7 @@
 	<div class="panel-body ">
 		<tabset>
 			<tab heading="{{'General'|translate}}">
-				<div class="alert alert-danger" ng-show="interface.$info.errors.length">
+				<div class="juci-error" ng-show="interface.$info.errors.length">
 					<ul>
 						<li ng-repeat="err in interface.$info.errors track by $index">Error ({{err.subsystem}}): {{err.code}}</li>
 					</ul>

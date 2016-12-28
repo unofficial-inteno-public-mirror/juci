@@ -38,9 +38,9 @@
 					<label translate>Re-type password</label>
 					<input type="password" ng-disabled="!features.encryption" class="form-control" placeholder="{{'Re-type password'|translate}}" name="pass_repeat" ng-model="data.pass_repeat"/>
 				</div>
-				<div class="alert alert-danger" ng-show="!features.encryption" 
+				<div class="juci-error" ng-show="!features.encryption" 
 					translate>Encryption of backups has been disabled (please make sure you have openssl cli utility installed!)</div>
-				<div class="alert alert-danger" ng-show="passwordError" 
+				<div class="juci-error" ng-show="passwordError" 
 					translate>Encryption password may only contain letters a-z, A-Z and numbers 0-9.</div>
 			</form>
 		</modal>
@@ -57,7 +57,7 @@
 					<juci-config-line title="{{'Backup file password'|translate}}">
 						<input type="password" class="form-control" name="pass" ng-disabled="!features.encryption" ng-model="data.pass" placeholder="{{'Password (if encrypted)'|translate}}"/>
 					</juci-config-line>
-					<div class="alert alert-danger" ng-show="!features.encryption" 
+					<div class="juci-error" ng-show="!features.encryption" 
 						translate>Uploading encrypted backups is not supported (requires openssl cli utility installed on the router!)</div>
 				</juci-config-lines>
 			</form>

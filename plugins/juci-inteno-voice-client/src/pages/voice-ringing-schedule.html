@@ -46,7 +46,7 @@
 <!--				</juci-config-line>-->
 <!--			</juci-config-line>-->
 			<juci-schedule-edit ng-model="schedule" ></juci-schedule-edit>
-			<div class="alert alert-danger" ng-show="errors && errors.length"><ul><li ng-repeat="e in errors track by $index">{{e|translate}}</li></ul></div>
+			<div class="juci-error" ng-show="errors && errors.length"><ul><li ng-repeat="e in errors track by $index">{{e|translate}}</li></ul></div>
 		</modal>
 	</div>
 </juci-layout-with-sidebar>

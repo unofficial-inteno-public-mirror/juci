@@ -14,7 +14,7 @@
 				<juci-select ng-model="data.mode" ng-items="allModes" placeholder="Select Interface Mode"></juci-select>
 			</juci-config-line>-->
 		</juci-config-lines>
-		<div class="alert alert-danger" ng-show="errors.length">
+		<div class="juci-error" ng-show="errors.length">
 			<ul>
 				<li ng-repeat="err in errors track by $index">{{err}}</li>
 			</ul>

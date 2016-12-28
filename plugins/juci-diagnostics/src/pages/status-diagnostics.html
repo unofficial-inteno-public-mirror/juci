@@ -24,7 +24,7 @@
 				</juci-config-line>
 			</juci-config-lines>
 			<div class="alert alert-default" ng-show="data.pingResults">{{'Ping results'|translate}}: <br/><pre>{{data.pingResults}}</pre></div>
-			<div class="alert alert-danger" ng-show="data.pingError">{{'Error'|translate}}: <br/><pre>{{data.pingError}}</pre></div>
+			<div class="juci-error" ng-show="data.pingError">{{'Error'|translate}}: <br/><pre>{{data.pingError}}</pre></div>
 		</juci-config-section>
 		<juci-config-section>
 			<juci-config-lines>
@@ -38,7 +38,7 @@
 				</juci-config-line>
 			</juci-config-lines>
 			<div class="alert alert-default" ng-show="data.traceResults">{{'Trace results'|translate}}: <br/><pre>{{data.traceResults}}</pre></div>
-			<div class="alert alert-danger" ng-show="data.traceError">{{'Error'|translate}}: <br/><pre>{{data.traceError}}</pre></div>
+			<div class="juci-error" ng-show="data.traceError">{{'Error'|translate}}: <br/><pre>{{data.traceError}}</pre></div>
 		</juci-config-section>
 	<!--	<juci-config-section>
 			<diagnostics-widget90-speedtest></diagnostics-widget90-speedtest>

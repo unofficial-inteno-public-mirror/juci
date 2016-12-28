@@ -22,7 +22,7 @@
 	</div>
 	<div ng-show="editRule">
 		<juci-schedule-edit ng-model="editRule"></juci-schedule-edit>
-		<div ng-repeat="er in errors track by $index" class="alert alert-danger" ng-show="errors.length">
+		<div ng-repeat="er in errors track by $index" class="juci-error" ng-show="errors.length">
 			{{er}}
 		</div>
 		<div class="row">

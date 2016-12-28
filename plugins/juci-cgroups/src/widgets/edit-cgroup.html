@@ -16,7 +16,7 @@
 			<button class="btn btn-default" ng-click="add()"><i class="fa fa-plus"></i></button>
 		</div>
 	</div>
-	<div class="alert alert-danger" style="font-size: 0.8em" ng-show="data.error">{{data.errormsg}}</div>
+	<div class="juci-error" style="font-size: 0.8em" ng-show="data.error">{{data.errormsg}}</div>
 
 	<div class="row" style="margin-bottom:20px" ng-repeat="opt in instance.option.value track by $index">
 		<div class="col-sm-6" style="font-size: 1.2em"></div>

@@ -6,7 +6,7 @@
 				<tr>
 					<td>{{'Hostname'| translate}}</td>
 					<td ng-show="!client">{{model.client.hostname || ("Unknown"|translate)}}<button ng-class="{'disabled': disabled}" class="btn btn-default pull-right" style="margin-right:15px;" ng-click="edit_hostname()"><i class="juci juci-edit"></i></button><br/ ></td>
-					<td ng-show="client"><input type="text" class="form-control" ng-model="client.name.value" placeholder="{{model.client.hostname || ''}}"></input><div ng-show="client.name.error !== null"><br /><div class="alert alert-danger">{{client.name.error}}</div></div></td>
+					<td ng-show="client"><input type="text" class="form-control" ng-model="client.name.value" placeholder="{{model.client.hostname || ''}}"></input><div ng-show="client.name.error !== null"><br /><div class="juci-error">{{client.name.error}}</div></div></td>
 				</tr>
 				<tr ng-repeat="value in values track by $index">
 					<td>{{value.label}}</td>
