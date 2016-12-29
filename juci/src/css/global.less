@@ -8,18 +8,18 @@ body {
 	color: @theme-text-color;
 }
 
-.panel { background-color: @theme-background-color; }
-.panel-heading { background-color: mix(@theme-background-color, black, 96%) !important; }
-.modal-content { background-color: @theme-background-color; }
+.panel { background-color: @theme-panel-background; }
+.panel-heading { background-color: mix(@theme-panel-background, black, 96%) !important; }
+.modal-content { background-color: @theme-panel-background; }
 .list-group-item {
-	background-color: @theme-background-color;
+	background-color: @theme-panel-background;
 	& > div {
-		background-color: mix(@theme-background-color, black, 96%) !important;
+		background-color: mix(@theme-panel-background, black, 96%) !important;
 	}
 }
 
 .table {
-	background-color: @theme-background-color !important;
+	background-color: @theme-panel-background !important;
 } 
 
 .form-control:focus {
@@ -42,4 +42,8 @@ body {
 
 .label-success {
 	background-color: @theme-success-color;
+}
+
+input {
+	background-color: @theme-input-color !important;
 }
