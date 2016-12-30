@@ -1,7 +1,6 @@
 @theme-background-color: white;					//background color of overview, juci-layout-with-sidebar, juci-layout-naked
 @theme-text-color: black;					//text-color on the whole page
 @theme-border: #cccccc;						//border-color of all pages where it is not over written
-@theme-border-light: mix(@theme-border, white, 70%);		//border-color of tabs and their content, and active tab in left navbar
 @theme-primary-color: #F1C100;					//background-color of primary-button, active-tab
 @theme-heading-color: #66989C;					//text-color of headings
 @theme-success-color: #5cb85c;					//background-color of success-button, label-success
@@ -17,8 +16,8 @@
 
 @theme-panel-background: @theme-background-color;		//background-color of panels and modals
 @theme-navbar-left-border: @theme-border;			//border-color of non-active tabs in the left navbar
-@theme-navbar-left-active-border: @theme-border-light;		//border-color of active tab in the left navbar
-@theme-tabs-border: @theme-border-light;			//border-color of tabs and their content
+@theme-navbar-left-active-border: mix(@theme-border, white, 70%);//border-color of active tab in the left navbar
+@theme-tabs-border: @theme-border;			//border-color of tabs and their content
 @theme-tabs-active: @theme-primary-color;			//background-color of the active tab in a tabset
 @theme-hr-color: @theme-border !important;			//color (border-color) of a <hr> tag
 @theme-buttons-primary: @theme-primary-color;			//background-color of a btn-primary and its different variants
