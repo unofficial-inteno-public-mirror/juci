@@ -1,12 +1,14 @@
 @import "colors.less";
 
-button, .btn, .btn.active, .btn.focus, .btn:active, .btn:focus, .btn:hover, .open &>.dropdown-toggle.btn {
+button, .btn {
 	background-color: @theme-buttons-color !important;
 	color: @theme-buttons-text !important;
 }
+.btn.active, .btn.focus, .btn:active, .btn:focus, .btn:hover, .open &>.dropdown-toggle.btn {
+	background-color: mix(@theme-buttons-color, black, 75%) !important;
+}
 .btn.disabled, .btn.disabled.active, .btn.disabled.focus, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn.active[disabled], .btn.focus[disabled], .btn[disabled]:active, .btn[disabled]:focus, .btn[disabled]:hover, fieldset[disabled] .btn, fieldset[disabled] .btn.active, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn:focus, fieldset[disabled] .btn:hover {
 	background-color: lighten(@theme-buttons-color, 10%) !important;
-	border-color: lighten(@theme-buttons-color, 10%) !important;
 }
 
 .btn-primary, .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open &>.dropdown-toggle.btn-primary, .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
