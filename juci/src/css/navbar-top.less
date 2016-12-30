@@ -2,7 +2,7 @@
 
 .juci-navbar-top {
 	color: @theme-navbar-top-inactive-text !important;
-	background-color: @theme-background-color;
+	background-color: @theme-navbar-top-bg;
 	z-index: 10;
 	width: 100%;
 	top: 0;
@@ -27,12 +27,12 @@
 			}
 			
 			& > a, & > a:hover {
-				background-color: @theme-background-color;
+				background-color: transparent;
 				border-top: 2px solid @theme-navbar-top-active !important;
 				color: @theme-navbar-top-active !important;
-				@media screen and (max-width: 968px) {
-					background-color: #ddd;
-				}
+				//@media screen and (max-width: 968px) {
+				//	background-color: #ddd;
+				//}
 			}
 		}
 			margin-top: 40px;
