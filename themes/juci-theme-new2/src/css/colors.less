@@ -1,0 +1,48 @@
+
+@theme-background-color: white;
+@theme-text-color: black;						//text-color on the whole page
+@theme-primary-color: #E62F39;
+@theme-border: #cccccc;
+@theme-success-color: #5cb85c;
+@theme-error-text: #E62f39;
+@theme-buttons-text: black;
+
+
+// Background colors
+@theme-panel-background: @theme-background-color;			//background-color of panels and modals
+
+// Navbars
+@theme-navbar-top-bg: black;						//background-color of top navbar
+@theme-navbar-top-active: @theme-primary-color;				//text- and border-color of the active tab in the top navbar
+@theme-navbar-top-inactive-text: white;					//text-color of the inactive tabs in the top navbar
+@theme-navbar-left-active: @theme-primary-color;			//text- and border-color of the active tab in the left navbar
+@theme-navbar-left-active-border: @theme-navbar-left-active;		//border-color of active tab in the left navbar
+@theme-navbar-left-border: @theme-border;				//border-color of non-active tabs in the left navbar
+@theme-navbar-left-inactive-text: @theme-text-color * 0.9;		//text-color of the inactive tabs in the left navbar
+
+// Text
+@theme-heading-color: @theme-text-color;				//text-color of headings
+@theme-link-color: @theme-text-color;					//text-color of links
+
+// Tabs
+@theme-tabs-border: @theme-border;					//border-color of tabs and their content
+@theme-tabs-active: @theme-heading-color;				//background-color of the active tab in a tabset
+
+// Buttons and input
+@theme-buttons-color: mix(@theme-background-color, white, 30%);		//background-color of all buttons and dropdowns
+@theme-buttons-primary: @theme-primary-color;				//background-color of a btn-primary and its different variants
+@theme-buttons-success: @theme-success-color;				//background-color of a btn-success and its different variants
+@theme-buttons-primary-text: @theme-background-color;
+@theme-buttons-success-text: @theme-background-color;
+@theme-input-color: mix(@theme-buttons-color, white, 50%);		//background-color of input fields
+@theme-input-focus: black;						//border-color of active input-field
+
+// Errors
+@theme-error-bg: mix(@theme-error-text, white, 12%);			//background-color of error divs
+
+// Footer
+@theme-apply-pane-color: mix(@theme-buttons-color, white, 80%);
+@theme-footer-base-color: @theme-background-color;			//base color of the gradient in the footer
+
+// Other
+@theme-hr-color: @theme-border !important;				//color (border-color) of a <hr> tag
