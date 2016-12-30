@@ -62,19 +62,24 @@ $(TMP_DIR)/$(STYLE_LOAD)-$(PLUGIN).css: $(STYLES_$(PLUGIN)) $(TMP_DIR)/$(PLUGIN)
 	$(Q)if [ "" != "$$^" ]; then for file in $$^; do cat $$$$file >> $$@; echo "" >> $$@; done; fi
 $(TMP_DIR)/$(STYLE_LOAD)-$(PLUGIN).css.js: $(TMP_DIR)/$(STYLE_LOAD)-$(PLUGIN).css
 	$(Q)./scripts/css-to-js $$^
-$(TMP_DIR)/$(PLUGIN)-compiled-styles.css: $(STYLES_LESS_$(PLUGIN))
+$(TMP_DIR)/themes/$(PLUGIN)/src/css: $(wildcard $(PLUGIN_DIR)/src/css/*.less)
+	@if [ "" != "$$^" ]; then\
+		mkdir -p $(TMP_DIR)/themes/$(PLUGIN)/src/css;\
+		for file in "$(wildcard $(PLUGIN_DIR)/src/css/*.less)"; do\
+			cp $$$$file $(TMP_DIR)/themes/$(PLUGIN)/src/css/$(notdir $(file));\
+		done;\
+		for file in $(STYLES_LESS_DEFAULT); do cp -n $$$$file $(TMP_DIR)/themes/$(PLUGIN)/src/css/$(notdir $(file)); done;\
+	fi
+$(TMP_DIR)/$(PLUGIN)-compiled-styles.css: $(TMP_DIR)/themes/$(PLUGIN)/src/css
 	@echo -e "\033[033m[LESS]\t$(PLUGIN) -> $$@\033[m"
 	@echo "" > $$@
 
-	@if [ "" != "$$^" ]; then\
-		mkdir -p $(TMP_DIR)/themes/$(PLUGIN)/src/css;\
-		for file in $(STYLES_LESS_$(PLUGIN)); do cp $$$$file $(TMP_DIR)/themes/$(PLUGIN)/src/css/$(notdir $(file)); done;\
-		for file in $(STYLES_LESS_DEFAULT); do cp -n $$$$file $(TMP_DIR)/themes/$(PLUGIN)/src/css/$(notdir $(file)); done;\
-		for file in $(wildcard $(TMP_DIR)/themes/$(PLUGIN)/src/css/*); do\
+	@if [ -a $(CURDIR)/$(TMP_DIR)/themes/$(PLUGIN) ]; then\
+		for file in ""$$$$(find $(CURDIR)/$(TMP_DIR)/themes/$(PLUGIN)/src/css -name *.less)""; do\
 			lessc $$$$file >> $$@;\
 			echo "" >> $$@;\
 		done;\
-	fi
+	fi;
 $(TMP_DIR)/$(TPL_LOAD)-$(PLUGIN).tpl.js: $(TEMPLATES_$(PLUGIN))
 	@echo -e "\033[0;33m[HTML]\t$(PLUGIN) -> $$@\033[m"
 	@echo "" > $$@
