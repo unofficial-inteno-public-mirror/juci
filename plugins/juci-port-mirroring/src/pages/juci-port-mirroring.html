@@ -1,0 +1,45 @@
+<juci-layout-with-sidebar>
+	<div ng-controller="juciPortMirroringCtrl">
+		<juci-config-heading>{{ 'Port Mirroring'|translate}}</juci-config-heading>
+		<juci-config-info>{{'port-mirroring-info'|translate}}</juci-config-info>
+		<juci-config-section></juci-config-section>
+		<juci-config-lines>
+			<juci-config-line title="{{'Source ports'|translate}}" help="{{'Interfaces (maximum of 4) to copy packets from'|translate}}">
+			<input type="text" class="form-control" ng-model="data.source_ports.value"/>
+			</juci-config-line>
+			<juci-config-line title="{{'Promiscuous'|translate}}" help="{{'Put source interface(s) in promiscuous mode'|translate}}">
+				<switch class="green" ng-model="data.promiscuous.value">
+			</juci-config-line>
+			<juci-config-line title="{{'Target'|translate}}" help="{{'Interface or IP address to send packets to'|translate}}">
+				<!--<juci-select ng-model="printer.port.value" ng-items="allPorts">-->
+				<input type="text" class="form-control" ng-model="data.target.value"/>
+			</juci-config-line>
+			<juci-config-line title="{{'Protocol'|translate}}" help="{{'TEE iptables (default) or TZSP TaZmen Sniffer Protocol'|translate}}">
+				<input type="text" class="form-control" ng-model="data.protocol.value"/>
+			</juci-config-line>
+			<juci-config-line title="{{'Filter'|translate}}" help="{{'Optional tcpdump/libpcap packet filter expressions'|translate}}">
+				<input type="text" class="form-control" ng-model="data.filter.value"/>
+			</juci-config-line>
+		</juci-config-lines>
+		<!--
+		<juci-config-section ng-repeat="printer in allPrinters track by $index">
+			<h3>{{'Printer'| translate}} {{$index + 1}}</h3>
+			<juci-config-lines>
+				<juci-config-line title="{{'Enable'|translate}}">
+					<switch class="green" ng-model="printer.enabled.value">
+				</juci-config-line>
+				<juci-config-line title="{{'Interface'|translate}}" help="{{'Specifies the interface to listen on'|translate}}">
+					<juci-select ng-model="printer.interface.value" ng-items="allLanInterfaces">
+				</juci-config-line>
+				<juci-config-line title="{{'Port'|translate}}" help="{{'Specifies the interface to listen on'|translate}}">
+					<juci-select ng-model="printer.port.value" ng-items="allPorts">
+				</juci-config-line>
+				<juci-config-line title="{{'Bidirectional mode'|translate}}">
+					<switch class="green" ng-model="printer.bidirectional.value">
+				</juci-config-line>
+			</juci-config-lines>
+		</juci-config-section>
+		-->
+	</div>
+</juci-layout-with-sidebar>
+

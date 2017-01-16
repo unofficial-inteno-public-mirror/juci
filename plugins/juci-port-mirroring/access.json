@@ -1,0 +1,15 @@
+{
+	"juci-port-mirroring": {
+		"description": "JUCI port-mirroring module",
+		"read": {
+			"uci": [
+				"port-mirroring"
+			]
+		},
+		"write": {
+			"uci": [
+				"port-mirroring"
+			]
+		}
+	}
+}
