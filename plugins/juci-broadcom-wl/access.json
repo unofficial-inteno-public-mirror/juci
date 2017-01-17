@@ -15,8 +15,6 @@
 					"stop"
 				], 
 				"juci.wireless": [
-					"scan", 
-					"scanresults",
 					"set_credentials"
 				],
 				"router.system": [
@@ -28,7 +26,9 @@
 				"router.wireless": [
 					"status",
 					"stas",
-					"radios"
+					"radios",
+					"scan",
+					"scanresults"
 				]
 			}, 
 			"uci": [
