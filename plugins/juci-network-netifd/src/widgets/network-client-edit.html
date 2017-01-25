@@ -59,5 +59,8 @@
 		<tab heading="{{'Parental Control'|translate}}">
 			<firewall-parental-control ng-model="model.client"></firewall-parental-control>
 		</tab>
+		<tab heading="{{'Throughput Graph'|translate}}" ng-show="wireless">
+			<juci-realtime-graph id="'throughput'" ng-model="load" tick="tick" min="0" max="2"></juci-realtime-graph>
+		</tab>
 	</tabset
 </div>

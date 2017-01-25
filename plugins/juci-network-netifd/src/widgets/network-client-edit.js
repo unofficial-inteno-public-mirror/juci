@@ -30,6 +30,21 @@ JUCI.app
 		require: "^ngModel"
 	};  
 }).controller("networkClientEdit", function($scope, $uci, $tr, gettext){	
+	$scope.tick = 2000;
+	$scope.load = {};
+
+	/*
+	$rpc.$call("router.network", "clients").done(function(cl6){
+		var wlclients = Object.keys(clients).map(function(c){return clients[c];}).map(function(client){
+			Object.keys(cl6).map(function(c6){return cl6[c6];}).map(function(client6){
+				if(client.macaddr === client6.macaddr){
+					client.ip6addr = client6.ip6addr;
+				}
+			});
+			return client;
+		});
+	*/
+
 	$scope.$watch("model", function(value){
 		if(!value || !value.client || !value.client.macaddr) return;
 		var networkList = [];
