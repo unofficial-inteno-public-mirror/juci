@@ -58,7 +58,6 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 				traffic[newKey] = data[key];
 			}
 			$scope.traffic = traffic;
-			console.log(traffic);
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
