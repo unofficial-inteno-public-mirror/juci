@@ -29,21 +29,6 @@ JUCI.app
 		for(var i=0; i<names.length; i++){
 			groups.add({ id:i, content:names[i] });
 		}
-		/*
-		groups.add({
-			id: 0,
-			content: "first"
-			//options: {
-			//	shaded: {
-			//		orientation: 'top'
-			//}}
-		});
-		groups.add({
-			id: 1,
-			content: "second"
-		});
-		*/
-
 
 		// create a graph2d with an (currently empty) dataset
 		var container = document.getElementById($scope.id);
@@ -78,6 +63,7 @@ JUCI.app
 			graph2d.setWindow(now - interval, now, {animation: false});
 			requestAnimationFrame(renderStep);
 		}
+		/*
 		renderStep();
 
 		// Add a new datapoint to the graph
@@ -119,5 +105,6 @@ JUCI.app
 
 	addDataPoint();
 
+	*/
 	},true);
 }); 
