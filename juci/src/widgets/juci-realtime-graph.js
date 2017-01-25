@@ -63,7 +63,6 @@ JUCI.app
 			graph2d.setWindow(now - interval, now, {animation: false});
 			requestAnimationFrame(renderStep);
 		}
-		/*
 		renderStep();
 
 		// Add a new datapoint to the graph
@@ -105,6 +104,5 @@ JUCI.app
 
 	addDataPoint();
 
-	*/
 	},true);
 }); 
