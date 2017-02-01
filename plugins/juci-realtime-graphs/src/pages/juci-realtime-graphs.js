@@ -1,4 +1,5 @@
 JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
+	$scope.data = {};
 	var mapIface = {};
 	/*
 	$scope.min_avg_max = {
@@ -49,7 +50,7 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 	$scope.tick = 2000;
 
 	function updateTraffic(){
-		$rpc.$call("router.net", "traffic").done(function(data){
+		$rpc.$call("router.net", "iface_traffic").done(function(data){
 			var traffic = {};
 			var newKey = undefined;
 			for (var key in data) {

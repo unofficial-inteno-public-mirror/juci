@@ -15,7 +15,7 @@ JUCI.app
 	}; 
 })
 .controller("juciRealtimeGraphCtrl", function($scope){
-	$scope.$watch("id",function(){
+	$scope.$watch("id",function(){ // expected to run only once, at startup
 		if(!$scope.id){return;}
 
 		if(!$scope.tick){ $scope.tick = 1000; }
@@ -61,9 +61,7 @@ JUCI.app
 			var interval = range.end - range.start;
 			// continuously move the window
 			graph2d.setWindow(now - interval, now, {animation: false});
-			requestAnimationFrame(renderStep);
 		}
-		renderStep();
 
 		// Add a new datapoint to the graph
 		function addDataPoint() {
@@ -88,8 +86,6 @@ JUCI.app
 			});
 			dataset.remove(oldIds);
 
-			setTimeout(addDataPoint, DELAY);
-
 			// update y-axis so all datapoints are visible
 			var maxData = dataset.max("y")["y"];
 			var maxAxis = options.dataAxis.left.range.max;
@@ -102,7 +98,15 @@ JUCI.app
 
 		}
 
-	addDataPoint();
+		JUCI.interval.repeat("realtimeGraphRenderStep-"+$scope.id,60,function(next){
+			renderStep();
+			next();
+		});
+		JUCI.interval.repeat("realtimeGraphAddDataPoint-"+$scope.id,$scope.tick,function(next){
+			addDataPoint();
+			renderStep(); //removes ugly blinks when the datapoints are updated
+			next();
+		});
 
 	},true);
 }); 

@@ -4,7 +4,8 @@
 		"read": {
 			"ubus": {
 				"router.net": [
-					"traffic",
+					"iface_traffic",
+					"client_traffic",
 					"load",
 					"connections"
 				],
