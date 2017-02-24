@@ -375,8 +375,6 @@ JUCI.app
 										edges.push({ from: item[cl.wdev]["__node_id__"], to: assoc_node.id, width: 3, dashes: true});
 									}
 								});
-								console.log(item);
-								console.log(asoc);
 								cb();
 							});
 						}).fail(function(e){console.log(e);});
