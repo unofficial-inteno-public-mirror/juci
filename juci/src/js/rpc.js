@@ -253,10 +253,11 @@
 			// {"jsonrpc":"2.0","id":234, "method":"unsubscribe", "params": [ "SESSION_ID", "foo.*"]}
 			return rpc_request("unsubscribe", evtype);
 		},
-		$list: function(){
+		$list: function(pattern){
 			// {"jsonrpc":"2.0","id":234, "method":"list", "params": [ <ignored>, "pattern*" ]} -> ubus list pattern*
 			// {"jsonrpc":"2.0","id":234, "method":"list", "params": [ <ignored> ]} -> ubus list
-			return rpc_request("list", "*");
+			if(!pattern) pattern = "*";
+			return rpc_request("list", pattern);
 		},
 		$isConnected: function(){
 			if(DEBUG_MODE) console.log("isConnected called");

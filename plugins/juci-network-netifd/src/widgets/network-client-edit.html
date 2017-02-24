@@ -59,5 +59,10 @@
 		<tab heading="{{'Parental Control'|translate}}">
 			<firewall-parental-control ng-model="model.client"></firewall-parental-control>
 		</tab>
-	</tabset
+		<tab ng-show="isRepeater" heading="{{'Ubus objects'|translate}}">
+			<table class="table table-hover">
+				<tr ng-repeat="obj in objects track by $index"><td>{{obj}}</td></tr>
+			</table>
+		</tab>
+	</tabset>
 </div>

@@ -31,8 +31,15 @@ JUCI.app
 	};  
 }).controller("networkClientEdit", function($scope, $uci, $tr, gettext){	
 	$scope.$watch("model", function(value){
-		if(!value || !value.client || !value.client.macaddr) return;
+		if(!value || !value.client || !value.client.macaddr || !value.client.ipaddr) return;
 		var networkList = [];
+		if($rpc.$has(value.client.ipaddr)){
+			$rpc.$list(value.client.ipaddr + "*").done(function(ret){
+				$scope.isRepeater = true;
+				$scope.objects = Object.keys(ret);
+				$scope.$apply();
+			});
+		}
 		$uci.$sync("dhcp").done(function(){
 			$scope.staticLeses = $uci.dhcp["@host"];
 			$scope.client = $scope.staticLeses.filter(function(l){

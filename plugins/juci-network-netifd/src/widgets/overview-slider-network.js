@@ -143,6 +143,7 @@ JUCI.app
 
 	
 	var updateData = function(full){
+		var todo = [];
 		var self = this;
 		var nodes = [];
 		var edges = [];
@@ -318,7 +319,8 @@ JUCI.app
 									}
 									nodes.push(host_node);
 									edges.push( { from: dev_node.id, to: host_node.id, width: 3, dashes: (host.wireless) } );
-									if(host.assoclist && host.assoclist.length){
+									var has_ubusx = $rpc.$has(host.ipaddr);
+									if(host.assoclist && host.assoclist.length && !has_ubusx){
 										host.assoclist.map(function(asc){
 											var assoc_node = {
 												id: JSON.stringify(asc) + count ++,
@@ -331,14 +333,59 @@ JUCI.app
 											nodes.push(assoc_node);
 											edges.push( { from: host_node.id, to: assoc_node.id, width: 3, dashes: true } );
 										});
+									}else if(has_ubusx){
+										host["__node_id__"] = host_node.id;
+										todo.push(host);
 									}
 								});
 							}
 						});
 					}).always(function(){callback();});
 				}, function(){
-					self.def.resolve(nodes, edges)
-					self.def = undefined;
+					async.eachSeries(todo, function(item, cb){
+						$rpc.$call(item.ipaddr + "/router.wireless", "radios").done(function(radios){
+							var count = 0;
+							Object.keys(radios).map(function(key){
+								var radio_node = {
+									id: JSON.stringify(key) + Date.now() + count++,
+									label: myString(key),
+									title: key,
+									image: getIcon("wl", radios[key]),
+									shape: "image"
+								}
+								nodes.push(radio_node);
+								edges.push({from: item["__node_id__"], to: radio_node.id, width: 3, dashes: true});
+								radios[key]["__node_id__"] = radio_node.id;
+								item[key] = radios[key];
+							});
+							$rpc.$call(item.ipaddr + "/router.wireless", "assoclist").done(function(asoc){
+								Object.keys(asoc).map(function(key){
+									var cl = asoc[key];
+									if(!cl || !cl.wdev || !cl.macaddr) return;
+									if(item.hasOwnProperty(cl.wdev)){
+										var count = 0;
+										var assoc_node = {
+											id: JSON.stringify(cl.macaddr) + Date.now() + count++,
+											label: myString(String(cl.macaddr)),
+											title: cl.macaddr,
+											image: "img/Wifi_Client_Yellow.png",
+											shape: "image"
+										}
+										nodes.push(assoc_node);
+										edges.push({ from: item[cl.wdev]["__node_id__"], to: assoc_node.id, width: 3, dashes: true});
+									}
+								});
+								console.log(item);
+								console.log(asoc);
+								cb();
+							});
+						}).fail(function(e){console.log(e);});
+					}, function(){
+						console.log("DONE");
+						self.def.resolve(nodes, edges)
+						self.def = undefined;
+					});
+
 				});
 			}
 		);
