@@ -57,16 +57,14 @@ JUCI.app
 			});
 
 			modalInstance.result.then(function (data) {
-				if (opts.model.onClose && typeof opts.model.onClose === "function"){
-					opts.model.onClose();
-				}
-				if (widget.onClose){ opts.onClose(); }
-
 				setTimeout(function(){ // do this because the callback is called during $apply() cycle
 					def.resolve(data); 
 				}, 0); 
 			}, function () {
 					
+			}).finally(function(){
+				modalInstance.$destroy();
+
 			});
 			
 			return def.promise(); 
