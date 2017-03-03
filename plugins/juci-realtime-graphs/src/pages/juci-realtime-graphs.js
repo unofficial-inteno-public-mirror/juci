@@ -50,7 +50,7 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 	$scope.tick = 2000;
 
 	function updateTraffic(){
-		$rpc.$call("router.net", "iface_traffic").done(function(data){
+		$rpc.$call("router.graph", "iface_traffic").done(function(data){
 			var traffic = {};
 			var newKey = undefined;
 			for (var key in data) {
@@ -64,14 +64,14 @@ JUCI.app.controller("rtgraphsCtrl", function($scope, $uci, $wireless){
 	}
 
 	function updateLoad(){
-		$rpc.$call("router.net", "load").done(function(data){
+		$rpc.$call("router.graph", "load").done(function(data){
 			$scope.load = data.load;
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
 
 	function updateConnections(){
-		$rpc.$call("router.net", "connections").done(function(data){
+		$rpc.$call("router.graph", "connections").done(function(data){
 			$scope.connections = data.connections;
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
