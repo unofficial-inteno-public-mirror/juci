@@ -24,6 +24,9 @@
 					"up",
 					"down"
 				],
+				"router.graph": [
+					"client_traffic"
+				],
 				"router.network": [
 					"dump",
 					"ports",

@@ -3,7 +3,7 @@
 		"description": "JUCI Realtime Graphs Module",
 		"read": {
 			"ubus": {
-				"router.net": [
+				"router.graph": [
 					"iface_traffic",
 					"client_traffic",
 					"load",
