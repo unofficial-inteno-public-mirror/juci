@@ -27,23 +27,39 @@ JUCI.app
 			model: "=ngModel"
 		},
 		replace: true, 
-		require: "^ngModel"
+		require: "^ngModel",
 	};  
-}).controller("networkClientEdit", function($scope, $uci, $tr, gettext){	
+}).controller("networkClientEdit", function($scope, $uci, $tr, gettext){
 	$scope.tick = 2000;
-	$scope.load = {};
+	$scope.stopRealtimeGraph = false;
+	$scope.model.onClose = function(){ $scope.stopRealtimeGraph = true; }
+	$scope.avgTraffic = {
+		rows: [
+			["Received Mbit/s", 0],
+			["Transmitted Mbit/s", 0],
+		]
+	};
 
-	/*
-	$rpc.$call("router.network", "clients").done(function(cl6){
-		var wlclients = Object.keys(clients).map(function(c){return clients[c];}).map(function(client){
-			Object.keys(cl6).map(function(c6){return cl6[c6];}).map(function(client6){
-				if(client.macaddr === client6.macaddr){
-					client.ip6addr = client6.ip6addr;
-				}
-			});
-			return client;
-		});
-	*/
+	function updateTraffic(){
+		console.log("UPDATING TRAFFIC");
+		$rpc.$call("router.graph", "client_traffic").done(function(data){
+			$scope.traffic = data[$scope.model.client.hostname];
+			//if(!id_is_set){ $scope.id = $scope.model.client.hostname; id_is_set = true;}
+			$scope.avgTraffic["rows"][0] = ["Received Mbit/s", ($scope.traffic["Received bytes"]/($scope.tick/1000)) *8 /1000000];
+			$scope.avgTraffic["rows"][1] = ["Transmitted Mbit/s", ($scope.traffic["Transmitted bytes"]/($scope.tick/1000)) *8 /1000000];
+			console.log($scope.avgTraffic);
+			$scope.$apply();
+		}).fail(function(e){console.log(e);});
+	}
+	updateTraffic();
+	setTimeout(function(){ $scope.id = $scope.model.client.hostname; }, 3000);
+
+	JUCI.interval.repeat("updateTraffic", $scope.tick, function(next){
+		updateTraffic();
+		if(!$scope.stopRealtimeGraph){
+			next();
+		}
+	});
 
 	$scope.$watch("model", function(value){
 		if(!value || !value.client || !value.client.macaddr) return;
