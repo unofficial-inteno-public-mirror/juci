@@ -25,6 +25,11 @@ JUCI.app
 		if(!$scope.ylabel){ $scope.ytitle = {}; } else{ $scope.ytitle = { "text": $scope.ylabel }; }
 		if(!$scope.stop){ $scope.stop = false; }
 
+		$scope.$on("$destroy", function(){
+			JUCI.interval.clear("realtimeGraphRenderStep-"+$scope.id);
+			JUCI.interval.clear("realtimeGraphAddDataPoint-"+$scope.id);
+		});
+
 		var DELAY = $scope.tick; // delay[ms] to add new data points
 		var groups = new vis.DataSet();
 		var names = Object.keys($scope.model);

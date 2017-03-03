@@ -32,13 +32,15 @@ JUCI.app
 }).controller("networkClientEdit", function($scope, $uci, $tr, gettext){
 	$scope.tick = 2000;
 	$scope.stopRealtimeGraph = false;
-	$scope.model.onClose = function(){ $scope.stopRealtimeGraph = true; }
 	$scope.avgTraffic = {
 		rows: [
 			["Received Mbit/s", 0],
 			["Transmitted Mbit/s", 0],
 		]
 	};
+	$scope.$on("$destroy", function(){
+		JUCI.interval.clear("updateTraffic");
+	});
 
 	function updateTraffic(){
 		console.log("UPDATING TRAFFIC");
