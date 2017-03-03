@@ -79,7 +79,8 @@ JUCI.app
 		$rpc.$call("juci.wireless", "set_credentials", {
 			"ssid":ssid,
 			"key":key,
-			"encryption":encr
+			"encryption":encr,
+			"import":true
 		}).done(function(ret){
 			$scope.showModal = true;
 			$scope.modalTitle = $tr(gettext("Attempting to Pair"));
@@ -102,10 +103,7 @@ JUCI.app
 					$scope.showManual.value = false;
 					$scope.showModal = false;
 					$scope.availableAps = result.map(function(ap){
-						var encrypt = "";
-						if(ap.cipher && !ap.cipher.match(/PSK/)) return null;
-						if(ap.cipher) encrypt = "psk2";
-						return { label: ap.ssid, value: ap.bssid, encryption: encrypt };
+						return { label: ap.ssid, value: ap.bssid, encryption: ap.encryption };
 					}).filter(function(ap){ return ap !== null; });
 					$scope.$apply();
 				});

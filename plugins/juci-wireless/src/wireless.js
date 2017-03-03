@@ -169,7 +169,7 @@ JUCI.app.factory("$wireless", function($uci, $rpc, $network, gettext, $tr){
 
 	Wireless.prototype.scan = function(opts){
 		var deferred = $.Deferred();
-		$rpc.$call("juci.wireless", "scan", opts).always(function(){
+		$rpc.$call("router.wireless", "scan", opts).always(function(){
 			deferred.resolve();
 		});
 		return deferred.promise();
@@ -177,7 +177,7 @@ JUCI.app.factory("$wireless", function($uci, $rpc, $network, gettext, $tr){
 
 	Wireless.prototype.getScanResults = function(opts){
 		var deferred = $.Deferred();
-		$rpc.$call("juci.wireless", "scanresults", opts).done(function(result){
+		$rpc.$call("router.wireless", "scanresults", opts).done(function(result){
 			deferred.resolve(result.access_points);
 		});
 		return deferred.promise();
@@ -208,8 +208,13 @@ JUCI.app.run(function($ethernet, $wireless, $uci){
 		"wlan":		{ dvalue: true, type: Boolean },
 		"wps":		{ dvalue: true, type: Boolean },
 		"schedule":	{ dvalue: false, type: Boolean },
-		"sched_status":	{ dvalue: false, type: Boolean },
-		"bandsteering":{ dvalue: false, type: Boolean }
+		"sched_status":	{ dvalue: false, type: Boolean }
+	});
+	UCI.wireless.$registerSectionType("bandsteering", {
+		"enabled":	{ dvalue: false, type: Boolean },
+		"policy":	{ dvalue: 0, type: Number },
+		"rssi_threshold":{ dvalue: -75, type: Number },
+		"bw_util":	{ dvalue: 60, type: Number }
 	});
 	UCI.wireless.$registerSectionType("wifi-schedule", {
 		"days":		{ dvalue: [], type: Array, allow: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], validator: UCI.validators.WeekDayListValidator},
@@ -271,7 +276,7 @@ JUCI.app.run(function($ethernet, $wireless, $uci){
 		"net_reauth":		{ dvalue: 36000, type: Number },
 		"wps_pbc":			{ dvalue: false, type: Boolean },
 		"wmf_bss_enable":	{ dvalue: false, type: Boolean },
-		"bss_max":			{ dvalue: 32, type: Number },
+		"bss_max":			{ dvalue: 32, type: Number, validator: UCI.validators.NumberLimitValidator(0, 128) },
 		"closed":			{ dvalue: false, type: Boolean },
 		"disabled":			{ dvalue: false, type: Boolean },
 		"macfilter":			{ dvalue: 0, type: Number },

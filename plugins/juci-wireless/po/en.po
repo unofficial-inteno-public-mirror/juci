@@ -607,7 +607,7 @@ msgid "menu-wireless-wps-title"
 msgstr "WPS"
 
 msgid "menu-wireless-status-title"
-msgstr "WiFi Status"
+msgstr "WiFi"
 
 msgid "menu-wireless-interfaces-title"
 msgstr "Wireless"
@@ -626,6 +626,9 @@ msgstr "Scheduling"
 
 msgid "menu-wireless-status-scan-title"
 msgstr "WiFi Scan"
+
+msgid "menu-wireless-band-steering-status-title"
+msgstr "Band Steering"
 
 msgid "menu-wireless-client-mode-title"
 msgstr "Client Mode"
