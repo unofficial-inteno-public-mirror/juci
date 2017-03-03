@@ -7,7 +7,8 @@ JUCI.app
 			tick: "=tick",
 			min: "@min",
 			max: "@max",
-			ylabel: "@ylabel"
+			ylabel: "@ylabel",
+			stop: "=stop"
 		}, 
 		templateUrl: "/widgets/juci-realtime-graph.html",
 		//template: '<div id={{id}}></div>',
@@ -22,6 +23,7 @@ JUCI.app
 		if(!$scope.min){ $scope.min = 0; } else{ $scope.min = parseInt($scope.min); }
 		if(!$scope.max){ $scope.max = 10000; } else{ $scope.max = parseInt($scope.max); }
 		if(!$scope.ylabel){ $scope.ytitle = {}; } else{ $scope.ytitle = { "text": $scope.ylabel }; }
+		if(!$scope.stop){ $scope.stop = false; }
 
 		var DELAY = $scope.tick; // delay[ms] to add new data points
 		var groups = new vis.DataSet();
@@ -34,6 +36,7 @@ JUCI.app
 		var container = document.getElementById($scope.id);
 		//container.innerHTML = container.innerHTML + $scope.id;
 		var dataset = new vis.DataSet();
+
 		var options = {
 			start: vis.moment().add(-30, 'seconds'), // changed so its faster
 			end: vis.moment(),
@@ -55,6 +58,7 @@ JUCI.app
 		var graph2d = new vis.Graph2d(container, dataset, groups, options);
 
 		function renderStep() {
+			console.log("renderStep()");
 			// move the window (you can think of different strategies).
 			var now = vis.moment();
 			var range = graph2d.getWindow();
@@ -65,6 +69,8 @@ JUCI.app
 
 		// Add a new datapoint to the graph
 		function addDataPoint() {
+			console.log("addDataPoint()");
+			console.log("STOP: "+$scope.stop);
 			// add a new data point to the dataset
 			var now = vis.moment();
 			var datatypes = Object.keys($scope.model);
