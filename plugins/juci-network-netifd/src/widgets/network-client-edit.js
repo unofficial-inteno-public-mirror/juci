@@ -31,7 +31,6 @@ JUCI.app
 	};  
 }).controller("networkClientEdit", function($scope, $uci, $tr, gettext){
 	$scope.tick = 2000;
-	$scope.stopRealtimeGraph = false;
 	$scope.avgTraffic = {
 		rows: [
 			["Received Mbit/s", 0],
@@ -43,24 +42,19 @@ JUCI.app
 	});
 
 	function updateTraffic(){
-		console.log("UPDATING TRAFFIC");
 		$rpc.$call("router.graph", "client_traffic").done(function(data){
 			$scope.traffic = data[$scope.model.client.hostname];
-			//if(!id_is_set){ $scope.id = $scope.model.client.hostname; id_is_set = true;}
 			$scope.avgTraffic["rows"][0] = ["Received Mbit/s", ($scope.traffic["Received bytes"]/($scope.tick/1000)) *8 /1000000];
 			$scope.avgTraffic["rows"][1] = ["Transmitted Mbit/s", ($scope.traffic["Transmitted bytes"]/($scope.tick/1000)) *8 /1000000];
-			console.log($scope.avgTraffic);
 			$scope.$apply();
 		}).fail(function(e){console.log(e);});
 	}
 	updateTraffic();
 	setTimeout(function(){ $scope.id = $scope.model.client.hostname; }, 3000);
 
-	JUCI.interval.repeat("updateTraffic", $scope.tick, function(next){
+	JUCI.interval.repeat("updateTraffic",$scope.tick,function(next){
 		updateTraffic();
-		if(!$scope.stopRealtimeGraph){
-			next();
-		}
+		next();
 	});
 
 	$scope.$watch("model", function(value){
