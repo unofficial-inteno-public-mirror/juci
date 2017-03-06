@@ -8,7 +8,6 @@ JUCI.app
 			min: "@min",
 			max: "@max",
 			ylabel: "@ylabel",
-			stop: "=stop"
 		}, 
 		templateUrl: "/widgets/juci-realtime-graph.html",
 		//template: '<div id={{id}}></div>',
@@ -23,7 +22,6 @@ JUCI.app
 		if(!$scope.min){ $scope.min = 0; } else{ $scope.min = parseInt($scope.min); }
 		if(!$scope.max){ $scope.max = 10000; } else{ $scope.max = parseInt($scope.max); }
 		if(!$scope.ylabel){ $scope.ytitle = {}; } else{ $scope.ytitle = { "text": $scope.ylabel }; }
-		if(!$scope.stop){ $scope.stop = false; }
 
 		$scope.$on("$destroy", function(){
 			JUCI.interval.clear("realtimeGraphRenderStep-"+$scope.id);
@@ -63,7 +61,6 @@ JUCI.app
 		var graph2d = new vis.Graph2d(container, dataset, groups, options);
 
 		function renderStep() {
-			console.log("renderStep()");
 			// move the window (you can think of different strategies).
 			var now = vis.moment();
 			var range = graph2d.getWindow();
@@ -74,8 +71,6 @@ JUCI.app
 
 		// Add a new datapoint to the graph
 		function addDataPoint() {
-			console.log("addDataPoint()");
-			console.log("STOP: "+$scope.stop);
 			// add a new data point to the dataset
 			var now = vis.moment();
 			var datatypes = Object.keys($scope.model);
